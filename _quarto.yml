@@ -7,7 +7,7 @@ website:
     left:
       - text: Slide Deck
         href: slide_deck.qmd
-      - text: "Module1"
+      - text: "Module 1"
         menu:
           - text: "Lecture Notes"
             href: M1/M1_resoruces.qmd
@@ -17,9 +17,66 @@ website:
             href: M1/M1_resoruces.qmd
           - text: "Exercise"
             href: M1/M1_exercise.qmd
-
-
-
+      - text: "Module 2"
+        menu:
+          - text: "Lecture Notes"
+            href: M2/M2_resoruces.qmd
+          - text: "Additional Resources"
+            href: M2/M2_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M2/M2_resoruces.qmd
+          - text: "Exercise"
+            href: M2/M2_exercise.qmd
+      - text: "Module 3"
+        menu:
+          - text: "Lecture Notes"
+            href: M3/M3_resoruces.qmd
+          - text: "Additional Resources"
+            href: M3/M3_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M3/M3_resoruces.qmd
+          - text: "Exercise"
+            href: M3/M3_exercise.qmd
+      - text: "Module 4"
+        menu:
+          - text: "Lecture Notes"
+            href: M2/M2_resoruces.qmd
+          - text: "Additional Resources"
+            href: M2/M2_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M2/M2_resoruces.qmd
+          - text: "Exercise"
+            href: M2/M2_exercise.qmd
+      - text: "Module 5"
+        menu:
+          - text: "Lecture Notes"
+            href: M4/M4_resoruces.qmd
+          - text: "Additional Resources"
+            href: M4/M4_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M4/M4_resoruces.qmd
+          - text: "Exercise"
+            href: M4/M4_exercise.qmd
+      - text: "Module 6"
+        menu:
+          - text: "Lecture Notes"
+            href: M2/M2_resoruces.qmd
+          - text: "Additional Resources"
+            href: M2/M2_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M2/M2_resoruces.qmd
+          - text: "Exercise"
+            href: M2/M2_exercise.qmd
+      - text: "Module 7"
+        menu:
+          - text: "Lecture Notes"
+            href: M7/M7_resoruces.qmd
+          - text: "Additional Resources"
+            href: M7/M7_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M7/M7_resoruces.qmd
+          - text: "Exercise"
+            href: M7/M7_exercise.qmd
 
 format:
   html:
