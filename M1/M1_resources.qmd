@@ -1,0 +1,262 @@
+---
+title: "Module 1: Getting Started with SQL"
+subtitle: "Lecture Notes"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf: default
+code-tools: true
+
+databases:
+  - name: hr
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
+  - name: hr-not-editable
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
+    editable: false
+
+---
+
+This module will guide you through the installation process for **PostgreSQL**, **MySQL**, and **Visual Studio Code (VSCode)** on different operating systems. Screenshots of key steps and installation confirmations are included but commented out for now.
+
+---
+
+# Installing PostgreSQL
+
+PostgreSQL is a powerful open-source relational database system. Follow the step-by-step instructions based on your operating system.
+
+:::{.panel-tabset}
+
+## macOS
+
+
+:::{.r-stack}
+
+![Download the PostgreSQL installer for macOS](./figures/download-postgresql.png){group="postgres" width="50%"}
+
+![Open the downloaded .dmg file](./figures/open-downloaded-installer.png){group="postgres" width="50%"}
+
+![Open the installation wizard](./figures/open-downloaded-installer.png){group="postgres" width="50%"}
+
+![Specify the installation directory](./figures/specify-installation-directory.png){group="postgres" width="50%"}
+
+![Select the required components](./figures/select-required-components.png){group="postgres" width="50%"}
+
+![Specify the data directory](./figures/specify-data-directory.png){group="postgres" width="50%"}
+
+![Provide a password](./figures/provide-password.png){group="postgres" width="50%"}
+
+![Specify the port](./figures/specify-port.png){group="postgres" width="50%"}
+
+![Select the locale](./figures/select-locale.png){group="postgres" width="50%"}
+
+![Review the pre-installation summary](./figures/review-pre-installation-summary.png){group="postgres" width="50%"}
+
+![Launch the installation](./figures/launch-installation.png){group="postgres" width="50%"}
+
+![Let the installation proceed](./figures/let-installation-proceed.png){group="postgres" width="50%"}
+
+![Complete the installation](./figures/complete-installation.png){group="postgres" width="50%"}
+
+
+:::
+
+## Windows
+
+:::{.r-stack}
+
+:::{.fragment}
+![Open the installation wizard](./figures/Install-PostgreSQL-Windows-Step-1.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Select the installation directory](./figures/Install-PostgreSQL-Windows-Step-2.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Select the components to install](./figures/Install-PostgreSQL-Windows-Step-3.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Specify the data directory](./figures/Install-PostgreSQL-Windows-Step-4.png){.fragment group="postgres-win" width="50%"}
+
+:::
+:::{.fragment}
+![Specify the port](./figures/Install-PostgreSQL-Windows-Step-6.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Select the locale](./figures/Install-PostgreSQL-Windows-Step-7.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Review the pre-installation summary](./figures/Install-PostgreSQL-Windows-Step-8.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Launch the installation](./figures/Install-PostgreSQL-Windows-Step-9.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Let the installation proceed](./figures/Install-PostgreSQL-Windows-Step-9-1.png){.fragment group="postgres-win" width="50%"}
+:::
+:::{.fragment}
+![Complete the installation](./figures/Install-PostgreSQL-Windows-Step-10.png){.fragment group="postgres-win" width="50%"}
+:::
+:::
+
+## Linux (Ubuntu/Debian)
+
+1. **Install PostgreSQL**:
+    - Open **Terminal** and run the following commands to install PostgreSQL:
+        ```{bash}
+        sudo apt update
+        sudo apt install postgresql postgresql-contrib
+        ```
+
+2. **Start PostgreSQL Service**:
+    - Enable and start the PostgreSQL service:
+        ```{bash}
+        sudo systemctl enable postgresql
+        sudo systemctl start postgresql
+        ```
+
+3. **Access PostgreSQL**:
+    - Access the PostgreSQL console by typing:
+        ```{bash}
+        sudo -i -u postgres
+        psql
+        ```
+
+
+:::
+
+# Installing MySQL
+
+:::{.panel-tabset}
+
+### Windows
+
+- Go to the official website of [MySQL](https://dev.mysql.com/downloads/installer/) and download the community server edition software. Here, you will see the option to choose the Operating System, such as Windows.
+
+![Download Installer](./figures/installmysql1.png){group="mysql" width="50%" #fig-mysql-install1}
+
+- After downloading the setup, unzip it anywhere and double click the MSI installer .exe file. It will give the following screen:
+
+![Run Installer](./figures/installmysql2.png){group="mysql" width="50%" #fig-mysql-install2}
+
+- In the next wizard, choose the Setup Type. There are several types available, and you need to choose the appropriate option to install MySQL product and features. Here, we are going to select the Full option and click on the Next button.
+
+![Choose Setup Type](./figures/installmysql3.png){group="mysql" width="50%" #fig-mysql-install3}
+
+- This option will install the following things: MySQL Server, MySQL Shell, MySQL Router, MySQL Workbench, MySQL Connectors, documentation, samples and examples, and many more.
+
+- Once we click on the Next button, it may give information about some features that may fail to install on your system due to a lack of requirements. We can resolve them by clicking on the Execute button that will install all requirements automatically or can skip them. Now, click on the Next button.
+
+![Confirm Installation](./figures/installmysql4.png){group="mysql" width="50%" #fig-mysql-install4}
+
+- In the next wizard, we will see a dialog box that asks for our confirmation of a few products not getting installed. Here, we have to click on the Yes button.
+
+![Confirm Installation](./figures/installmysql5.png){group="mysql" width="50%" #fig-mysql-install5}
+
+- After clicking on the Yes button, we will see the list of the products which are going to be installed. So, if we need all products, click on the Execute button.
+
+![Confirm Installation](./figures/installmysql6.png){group="mysql" width="50%" #fig-mysql-install6}
+
+- Once we click on the Execute button, it will download and install all the products. After completing the installation, click on the Next button.
+
+![Confirm Installation](./figures/installmysql7.png){group="mysql" width="50%" #fig-mysql-install7}
+
+- In the next wizard, we need to configure the MySQL Server and Router. Here, I am not going to configure the Router because there is no need to use it with MySQL. We are going to show you how to configure the server only. Now, click on the Next button.
+
+![Configure Server](./figures/installmysql8.png){group="mysql" width="50%" #fig-mysql-install8}
+
+- As soon as you will click on the Next button, you can see the screen below. Here, we have to configure the MySQL Server. Now, choose the Standalone MySQL Server/Classic MySQL Replication option and click on Next. Here, you can also choose the InnoDB Cluster based on your needs.
+
+![Configure Server](./figures/installmysql9.png){group="mysql" width="50%" #fig-mysql-install9}
+
+- In the next screen, the system will ask you to choose the Config Type and other connectivity options. Here, we are going to select the Config Type as 'Development Machine' and Connectivity as TCP/IP, and Port Number is 3306, then click on Next.
+  
+![Configure Server](./figures/installmysql10.png){group="mysql" width="50%" #fig-mysql-install10}
+
+- Now, select the Authentication Method and click on Next. Here, I am going to select the first option.
+
+![Configure Server](./figures/installmysql11.png){group="mysql" width="50%" #fig-mysql-install11}
+
+- The next screen will ask you to mention the MySQL Root Password. After filling the password details, click on the Next button.
+
+![Configure Server](./figures/installmysql12.png){group="mysql" width="50%" #fig-mysql-install12}
+
+- The next screen will ask you to configure the Windows Service to start the server. Keep the default setup and click on the Next button.
+
+![Configure Server](./figures/installmysql13.png){group="mysql" width="50%" #fig-mysql-install13}
+
+- In the next wizard, the system will ask you to apply the Server Configuration. If you agree with this configuration, click on the Execute button.
+
+![Configure Server](./figures/installmysql14.png){group="mysql" width="50%" #fig-mysql-install14}
+
+- Once the configuration has completed, you will get the screen below. Now, click on the Finish button to continue.
+
+![Configure Server](./figures/installmysql15.png){group="mysql" width="50%" #fig-mysql-install15}
+
+- In the next screen, you can see that the Product Configuration is completed. Keep the default setting and click on the Next-> Finish button to complete the MySQL package installation.
+
+![Configure Server](./figures/installmysql16.png){group="mysql" width="50%" #fig-mysql-install16}
+
+
+- In the next wizard, we can choose to configure the Router. So click on Next->Finish and then click the Next button.
+
+![Configure Server](./figures/installmysql17.png){group="mysql" width="50%" #fig-mysql-install17}
+
+
+- In the next wizard, we will see the Connect to Server option. Here, we have to mention the root password, which we had set in the previous steps.
+
+![Configure Server](./figures/installmysql18.png){group="mysql" width="50%" #fig-mysql-install18}
+
+- In this screen, it is also required to check about the connection is successful or not by clicking on the Check button. If the connection is successful, click on the Execute button. Now, the configuration is complete, click on Next.
+
+![Configure Server](./figures/installmysql19.png){group="mysql" width="50%" #fig-mysql-install19}
+
+- In the next wizard, select the applied configurations and click on the Execute button.
+
+![Configure Server](./figures/installmysql21.png){group="mysql" width="50%" #fig-mysql-install20}
+
+how to install mysql
+Step 18: After completing the above step, we will get the following screen. Here, click on the Finish button.
+
+how to install mysql
+Step 19: Now, the MySQL installation is complete. Click on the Finish button.
+
+how to install mysql
+Verify MySQL installation
+Once MySQL has been successfully installed, the base tables have been initialized, and the server has been started, you can verify its working via some simple tests.
+
+Open your MySQL Command Line Client; it should have appeared with a mysql> prompt. If you have set any password, write your password here. Now, you are connected to the MySQL server, and you can execute all the SQL command at mysql> prompt as follows:
+
+For example: Check the already created databases with show databases command:
+
+:::
+
+## HR sample data
+
+Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from [www.sqltutorial.org](https://www.sqltutorial.org/sql-sample-database/). And to create the database, a SQLite script file was used when rendering the document. Read the [extension docs](https://github.com/shafayetShafee/interactive-sql#using) for details.
+
+
+## ERD of HR database
+
+The following database diagram illustrates the HR sample database:
+
+![ERD of HR database](./figures/hr-SQL-Sample-Database-Schema.png){#fig-erd-hr}
+
+
+## Editable Example
+
+And now, you can run all sort of queries from the tables of the HR databases.
+
+```{.sql .interactive .hr}
+select * from regions;
+```
+
+
+## Not editable example
+
+You can also create "not-editable" code chunk (that is, you simply can run the query but won't be able to edit/modify it) for HR database. And to do this, just use another instance of database under the `database` key in the yaml with a different name and use the option `editable: false`.
+
+## Not editable example
+
+```{.sql .interactive .hr-not-editable}
+select * from employees;
+```

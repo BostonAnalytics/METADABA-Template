@@ -12,5 +12,152 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "M1/M1_resources.html",
+    "href": "M1/M1_resources.html",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "",
+    "text": "This module will guide you through the installation process for PostgreSQL, MySQL, and Visual Studio Code (VSCode) on different operating systems. Screenshots of key steps and installation confirmations are included but commented out for now."
+  },
+  {
+    "objectID": "M1/M1_resources.html#windows",
+    "href": "M1/M1_resources.html#windows",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "1.1 Windows",
+    "text": "1.1 Windows\n\n\n\n\n\nOpen the installation wizard\n\n\n\n\n\n\n\nSelect the installation directory\n\n\n\n\n\n\n\nSelect the components to install\n\n\n\n\n\n\n\nSpecify the data directory\n\n\n\n\n\n\n\nSpecify the port\n\n\n\n\n\n\n\nSelect the locale\n\n\n\n\n\n\n\nReview the pre-installation summary\n\n\n\n\n\n\n\nLaunch the installation\n\n\n\n\n\n\n\nLet the installation proceed\n\n\n\n\n\n\n\nComplete the installation"
+  },
+  {
+    "objectID": "M1/M1_resources.html#linux-ubuntudebian",
+    "href": "M1/M1_resources.html#linux-ubuntudebian",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "1.2 Linux (Ubuntu/Debian)",
+    "text": "1.2 Linux (Ubuntu/Debian)\n\nInstall PostgreSQL:\n\nOpen Terminal and run the following commands to install PostgreSQL:\nsudo apt update\nsudo apt install postgresql postgresql-contrib\n\nStart PostgreSQL Service:\n\nEnable and start the PostgreSQL service:\nsudo systemctl enable postgresql\nsudo systemctl start postgresql\n\nAccess PostgreSQL:\n\nAccess the PostgreSQL console by typing:\nsudo -i -u postgres\npsql\n\n\n:::"
+  },
+  {
+    "objectID": "M2/M2_resources.html#hr-sample-data",
+    "href": "M2/M2_resources.html#hr-sample-data",
+    "title": "Interactive-sql",
+    "section": "",
+    "text": "Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "M2/M2_resources.html#erd-of-hr-database",
+    "href": "M2/M2_resources.html#erd-of-hr-database",
+    "title": "Interactive-sql",
+    "section": "ERD of HR database",
+    "text": "ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\n\n\n\n\nFigure 1: ERD of HR database"
+  },
+  {
+    "objectID": "M2/M2_resources.html#editable-example",
+    "href": "M2/M2_resources.html#editable-example",
+    "title": "Interactive-sql",
+    "section": "Editable Example",
+    "text": "Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\n\nselect * from regions;"
+  },
+  {
+    "objectID": "M2/M2_resources.html#not-editable-example",
+    "href": "M2/M2_resources.html#not-editable-example",
+    "title": "Interactive-sql",
+    "section": "Not editable example",
+    "text": "Not editable example\nYou can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the database key in the yaml with a different name and use the option editable: false."
+  },
+  {
+    "objectID": "M2/M2_resources.html#not-editable-example-1",
+    "href": "M2/M2_resources.html#not-editable-example-1",
+    "title": "Interactive-sql",
+    "section": "Not editable example",
+    "text": "Not editable example\n\nselect * from employees;"
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "1 Course Overview",
+    "text": "1 Course Overview\n\n1.1 Course Description\nThis SQL Bootcamp is designed to teach students, particularly those in applied business analytics and data science, the foundations and advanced techniques of SQL using both MySQL and PostgreSQL. Over nine modules, you will master fundamental SQL concepts such as querying data, working with joins, stored procedures, transactions, and more. Each module is accompanied by self-guided learning tasks, quizzes, and practical assessments to ensure a deep understanding of database concepts.\n\n\n1.2 Learning Outcomes\nUpon completing the SQL Bootcamp, you will be able to:\n\nUnderstand and write basic SQL queries.\nRetrieve, manipulate, and manage data efficiently.\nWork with multiple tables using joins and set operations.\nCreate and manage databases, tables, and indexes.\nUnderstand and implement stored procedures, functions, triggers, and transactions.\n\n\n\n1.3 Total Time Required\n\nInstructor-led learning: 2 hours (each module for 20 minutes)\nSelf-guided learning and assessments: 4 hours combined"
+  },
+  {
+    "objectID": "index.html#sql-course-outline",
+    "href": "index.html#sql-course-outline",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "2 SQL Course Outline",
+    "text": "2 SQL Course Outline\n\n2.1 Getting Started with SQL\n\nObjectives:\n\nIntroduction to relational databases, setting up MySQL and PostgreSQL, understanding SQL syntax and data types.\n\nLectures:\n\nIntroduction to MySQL and PostgreSQL: Overview of popular relational databases and setting up local environments.\nData Types: Understanding core SQL data types (e.g., int, varchar, date, etc.).\nCreating Databases and Tables: Steps to create a new database and define tables.\nInserting, Updating, and Deleting Records: Basic SQL operations for manipulating records.\n\n\n\n\n2.2 Retrieving Data with SQL\n\nObjectives:\n\nLearn to write SQL queries to retrieve data from a database.\n\nLectures:\n\nSELECT Statements: Introduction to the SELECT statement for querying data.\nWHERE Clauses and Filtering Data: Using WHERE to filter query results based on conditions.\nSorting Data with ORDER BY, LIMIT, and OFFSET: Techniques for ordering and limiting results.\nUsing Variables in Queries: Working with variables to enhance query flexibility.\n\n\n\n\n2.3 Modifying Data with SQL\n\nObjectives:\n\nMaster techniques for modifying data in SQL databases.\n\nLectures:\n\nINSERT, UPDATE, DELETE Statements: Essential commands for data manipulation.\nError Handling and Constraints: Handling constraints like PRIMARY KEY and FOREIGN KEY, and error management.\nManaging NULL Values and Default Values: Handling missing or default values in SQL.\nString Operations in SQL: Useful string functions like CONCAT, SUBSTRING, etc.\n\n\n\n\n2.4 Joins and Advanced Queries\n\nObjectives:\n\nLearn to retrieve and work with data across multiple tables using SQL joins.\n\nLectures:\n\nINNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN: Understanding different types of joins and their uses.\nUNION and UNION ALL: Combining results from multiple queries.\nGrouping and Aggregating Data with GROUP BY: Techniques for grouping data and using aggregate functions like SUM, COUNT, etc.\nHAVING Clauses: Filtering aggregated data with HAVING.\n\n\n\n\n2.5 Managing Database Structures\n\nObjectives:\n\nLearn to modify and optimize database structures for improved performance.\n\nLectures:\n\nALTER TABLE and MODIFY Operations: Altering table structures and modifying columns.\nCreating and Deleting Indexes: Indexing strategies for faster data retrieval.\nOptimizing Queries for Performance: Techniques to improve query execution times.\nHandling Large Datasets and Backups: Managing large datasets, backups, and recovery\n\n\n\n\n2.6 Stored Procedures and Triggers\n\nObjectives:\n\nIntroduction to automation and server-side programming with stored procedures and triggers.e\n\nLectures:\n\nCreating and Calling Stored Procedures: Writing reusable procedures for SQL operations.\nCreating and Managing Triggers: Automating actions with database triggers.\nError Handling in Stored Procedures: Managing errors within stored procedures.\nPerformance Considerations: Best practices for efficient stored procedures and triggers."
+  },
+  {
+    "objectID": "M2/M2_resources.html",
+    "href": "M2/M2_resources.html",
+    "title": "Interactive-sql",
+    "section": "",
+    "text": "Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "index.html#hr-sample-data",
+    "href": "index.html#hr-sample-data",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "3 HR sample data",
+    "text": "3 HR sample data\nHere we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "index.html#erd-of-hr-database",
+    "href": "index.html#erd-of-hr-database",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "4 ERD of HR database",
+    "text": "4 ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\n\n\n\n\nFigure 1: ERD of HR database"
+  },
+  {
+    "objectID": "index.html#editable-example",
+    "href": "index.html#editable-example",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "5 Editable Example",
+    "text": "5 Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\nselect * from regions;"
+  },
+  {
+    "objectID": "index.html#not-editable-example",
+    "href": "index.html#not-editable-example",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "6 Not editable example",
+    "text": "6 Not editable example\nYou can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the database key in the yaml with a different name and use the option editable: false."
+  },
+  {
+    "objectID": "index.html#not-editable-example-1",
+    "href": "index.html#not-editable-example-1",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "7 Not editable example",
+    "text": "7 Not editable example\nselect * from employees;"
+  },
+  {
+    "objectID": "M1/M1_resources.html#hr-sample-data",
+    "href": "M1/M1_resources.html#hr-sample-data",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "2.1 HR sample data",
+    "text": "2.1 HR sample data\nHere we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "M1/M1_resources.html#erd-of-hr-database",
+    "href": "M1/M1_resources.html#erd-of-hr-database",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "2.2 ERD of HR database",
+    "text": "2.2 ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\n\n\n\n\nFigure 21: ERD of HR database"
+  },
+  {
+    "objectID": "M1/M1_resources.html#editable-example",
+    "href": "M1/M1_resources.html#editable-example",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "2.3 Editable Example",
+    "text": "2.3 Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\n\nselect * from regions;"
+  },
+  {
+    "objectID": "M1/M1_resources.html#not-editable-example",
+    "href": "M1/M1_resources.html#not-editable-example",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "2.4 Not editable example",
+    "text": "2.4 Not editable example\nYou can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the database key in the yaml with a different name and use the option editable: false."
+  },
+  {
+    "objectID": "M1/M1_resources.html#not-editable-example-1",
+    "href": "M1/M1_resources.html#not-editable-example-1",
+    "title": "Module 1: Getting Started with SQL",
+    "section": "2.5 Not editable example",
+    "text": "2.5 Not editable example\n\nselect * from employees;"
   }
 ]

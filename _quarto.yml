@@ -1,6 +1,9 @@
 project:
   type: website
-
+filters:
+  - interactive-sql
+  - webr
+  - pyodide
 website:
   title: "Preparatory Labs"
   navbar:
@@ -10,71 +13,71 @@ website:
       - text: "Module 1"
         menu:
           - text: "Lecture Notes"
-            href: M1/M1_resoruces.qmd
+            href: M1/M1_resources.qmd
           - text: "Additional Resources"
             href: M1/M1_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M1/M1_resoruces.qmd
+            href: M1/M1_testyourself.qmd
           - text: "Exercise"
             href: M1/M1_exercise.qmd
       - text: "Module 2"
         menu:
           - text: "Lecture Notes"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_resources.qmd
           - text: "Additional Resources"
             href: M2/M2_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_testyourself.qmd
           - text: "Exercise"
             href: M2/M2_exercise.qmd
       - text: "Module 3"
         menu:
           - text: "Lecture Notes"
-            href: M3/M3_resoruces.qmd
+            href: M3/M3_resources.qmd
           - text: "Additional Resources"
             href: M3/M3_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M3/M3_resoruces.qmd
+            href: M3/M3_testyourself.qmd
           - text: "Exercise"
             href: M3/M3_exercise.qmd
       - text: "Module 4"
         menu:
           - text: "Lecture Notes"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_resources.qmd
           - text: "Additional Resources"
             href: M2/M2_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_testyourself.qmd
           - text: "Exercise"
             href: M2/M2_exercise.qmd
       - text: "Module 5"
         menu:
           - text: "Lecture Notes"
-            href: M4/M4_resoruces.qmd
+            href: M4/M4_resources.qmd
           - text: "Additional Resources"
             href: M4/M4_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M4/M4_resoruces.qmd
+            href: M4/M4_testyourself.qmd
           - text: "Exercise"
             href: M4/M4_exercise.qmd
       - text: "Module 6"
         menu:
           - text: "Lecture Notes"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_resources.qmd
           - text: "Additional Resources"
             href: M2/M2_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M2/M2_resoruces.qmd
+            href: M2/M2_testyourself.qmd
           - text: "Exercise"
             href: M2/M2_exercise.qmd
       - text: "Module 7"
         menu:
           - text: "Lecture Notes"
-            href: M7/M7_resoruces.qmd
+            href: M7/M7_resources.qmd
           - text: "Additional Resources"
             href: M7/M7_technicalhelp.qmd
           - text: "Test Yourself"
-            href: M7/M7_resoruces.qmd
+            href: M7/M7_testyourself.qmd
           - text: "Exercise"
             href: M7/M7_exercise.qmd
 
