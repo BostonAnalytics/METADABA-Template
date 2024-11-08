@@ -2,11 +2,24 @@ project:
   type: website
 
 website:
-  title: "Prepratory Labs"
+  title: "Preparatory Labs"
   navbar:
     left:
-      - href: slide_deck.qmd
-        text: Slide Deck
+      - text: Slide Deck
+        href: slide_deck.qmd
+      - text: "Module1"
+        menu:
+          - text: "Lecture Notes"
+            href: M1/M1_resoruces.qmd
+          - text: "Additional Resources"
+            href: M1/M1_technicalhelp.qmd
+          - text: "Test Yourself"
+            href: M1/M1_resoruces.qmd
+          - text: "Exercise"
+            href: M1/M1_exercise.qmd
+
+
+
 
 format:
   html:
