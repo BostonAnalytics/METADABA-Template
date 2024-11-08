@@ -1,5 +1,5 @@
 ---
-title: "Prepratory Labs"
+title: "Preparatory Labs"
 ---
 
 This is a Quarto website.
