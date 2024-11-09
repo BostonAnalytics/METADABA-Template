@@ -7,7 +7,7 @@ format:
   pdf: default
 ---
 
-![](./main_figures/web-database-1.gif)
+![](./templates/images/web-database-1.gif)
 
 ## Course Overview
 
