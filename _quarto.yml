@@ -1,9 +1,6 @@
 project:
   type: website
-filters:
-  - interactive-sql
-  - webr
-  - pyodide
+
 website:
   title: "Preparatory Labs"
   navbar:
@@ -80,6 +77,11 @@ website:
             href: M7/M7_testyourself.qmd
           - text: "Exercise"
             href: M7/M7_exercise.qmd
+
+filters:
+  - interactive-sql
+  - webr
+  - pyodide
 
 format:
   html:
