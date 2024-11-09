@@ -4,8 +4,11 @@ format:
   html:
     toc: true
     number-sections: true
-  pdf: default
 
+filters:
+  - webr
+  - pyodide
+  - interactive-sql
 ---
 
 ![](./templates/images/web-database-1.gif)
