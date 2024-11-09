@@ -25,7 +25,7 @@
     "href": "M1/M1_resources.html#editable-example",
     "title": "Module 1: Getting Started with SQL",
     "section": "3.2 Editable Example",
-    "text": "3.2 Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\nselect * from regions;"
+    "text": "3.2 Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\n\nselect * from regions;"
   },
   {
     "objectID": "M1/M1_resources.html#not-editable-example",
@@ -39,7 +39,7 @@
     "href": "M1/M1_resources.html#not-editable-example-1",
     "title": "Module 1: Getting Started with SQL",
     "section": "3.4 Not editable example",
-    "text": "3.4 Not editable example\nselect * from employees;"
+    "text": "3.4 Not editable example\n\nselect * from employees;"
   },
   {
     "objectID": "index.html#course-overview",

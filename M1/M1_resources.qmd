@@ -5,6 +5,10 @@ format:
   html:
     toc: true
     number-sections: true
+filters:
+  - webr
+  - pyodide
+  - interactive-sql
 databases:
   - name: hr
     path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
