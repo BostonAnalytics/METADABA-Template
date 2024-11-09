@@ -78,10 +78,7 @@ website:
           - text: "Exercise"
             href: M7/M7_exercise.qmd
 
-filters:
-  - interactive-sql
-  - webr
-  - pyodide
+
 
 format:
   html:
