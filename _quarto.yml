@@ -83,8 +83,8 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [cosmo, ./templates/scss/theme.scss]
+    css: [./templates/css/styles.css]
     toc: true
 
 
