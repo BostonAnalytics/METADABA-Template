@@ -5,9 +5,10 @@ format:
   html:
     toc: true
     number-sections: true
-  pdf: default
-code-tools: true
-
+filters:
+  - webr
+  - pyodide
+  - interactive-sql
 databases:
   - name: hr
     path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
@@ -230,7 +231,7 @@ For example: Check the already created databases with show databases command:
 
 :::
 
-## HR sample data
+# HR sample data
 
 Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from [www.sqltutorial.org](https://www.sqltutorial.org/sql-sample-database/). And to create the database, a SQLite script file was used when rendering the document. Read the [extension docs](https://github.com/shafayetShafee/interactive-sql#using) for details.
 

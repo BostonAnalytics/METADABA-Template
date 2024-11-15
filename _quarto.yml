@@ -1,9 +1,6 @@
 project:
   type: website
-filters:
-  - interactive-sql
-  - webr
-  - pyodide
+
 website:
   title: "Preparatory Labs"
   navbar:
@@ -60,31 +57,31 @@ website:
             href: M4/M4_testyourself.qmd
           - text: "Exercise"
             href: M4/M4_exercise.qmd
-      - text: "Module 6"
-        menu:
-          - text: "Lecture Notes"
-            href: M2/M2_resources.qmd
-          - text: "Additional Resources"
-            href: M2/M2_technicalhelp.qmd
-          - text: "Test Yourself"
-            href: M2/M2_testyourself.qmd
-          - text: "Exercise"
-            href: M2/M2_exercise.qmd
-      - text: "Module 7"
-        menu:
-          - text: "Lecture Notes"
-            href: M7/M7_resources.qmd
-          - text: "Additional Resources"
-            href: M7/M7_technicalhelp.qmd
-          - text: "Test Yourself"
-            href: M7/M7_testyourself.qmd
-          - text: "Exercise"
-            href: M7/M7_exercise.qmd
+      # - text: "Module 6"
+      #   menu:
+      #     - text: "Lecture Notes"
+      #       href: M2/M2_resources.qmd
+      #     - text: "Additional Resources"
+      #       href: M2/M2_technicalhelp.qmd
+      #     - text: "Test Yourself"
+      #       href: M2/M2_testyourself.qmd
+      #     - text: "Exercise"
+      #       href: M2/M2_exercise.qmd
+      # - text: "Module 7"
+      #   menu:
+      #     - text: "Lecture Notes"
+      #       href: M7/M7_resources.qmd
+      #     - text: "Additional Resources"
+      #       href: M7/M7_technicalhelp.qmd
+      #     - text: "Test Yourself"
+      #       href: M7/M7_testyourself.qmd
+      #     - text: "Exercise"
+      #       href: M7/M7_exercise.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [cosmo, ./templates/scss/theme.scss]
+    css: [./templates/css/styles.css]
     toc: true
 
 
