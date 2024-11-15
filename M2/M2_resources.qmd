@@ -1,5 +1,5 @@
 ---
-title: "Example page"
+title: "Example page R"
 webr:  
   show-startup-message: true    # Display status of webR initialization
   packages: ['ggplot2'] # Pre-install dependency

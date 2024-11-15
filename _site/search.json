@@ -33,5 +33,320 @@
     "title": "Interactive-sql",
     "section": "Not editable example",
     "text": "Not editable example\n\nselect * from employees;"
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#welcome",
+    "href": "M2/M2_Presentation.html#welcome",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-webr extension to generate interactive code cells with Quarto and webR.\n\n\n\n\n\n\nImportant\n\n\nThis template requires a pre-release version of Quarto that is 1.4.502 or greater that contains an updated copy of pandoc. For more details, please see Issue #14.\n\n\n\nNot the right template? Let’s go back to the documentation portal"
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#webr-in-revealjs",
+    "href": "M2/M2_Presentation.html#webr-in-revealjs",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "webR in RevealJS",
+    "text": "webR in RevealJS\nThis is a webR-enabled code cell in a Quarto RevealJS document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#base-r-graphing-with-webr",
+    "href": "M2/M2_Presentation.html#base-r-graphing-with-webr",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Base R Graphing with webR",
+    "text": "Base R Graphing with webR\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#ggplot2-in-webr",
+    "href": "M2/M2_Presentation.html#ggplot2-in-webr",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "ggplot2 in webR",
+    "text": "ggplot2 in webR\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#help-documentation",
+    "href": "M2/M2_Presentation.html#help-documentation",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Help Documentation",
+    "text": "Help Documentation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#prints-warnings-and-errors",
+    "href": "M2/M2_Presentation.html#prints-warnings-and-errors",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Prints, Warnings, and Errors",
+    "text": "Prints, Warnings, and Errors\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#keyboard-shortcuts",
+    "href": "M2/M2_Presentation.html#keyboard-shortcuts",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Keyboard Shortcuts",
+    "text": "Keyboard Shortcuts\n\nRun selected code using either:\n\nmacOS: ⌘ + ↩︎/Return\nWindows/Linux: Ctrl + ↩︎/Enter\n\nRun the entire code by clicking the “Run code” button or pressing Shift+↩︎.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#embedded-slides",
+    "href": "M2/M2_Presentation.html#embedded-slides",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Embedded Slides",
+    "text": "Embedded Slides\nYou can embed the slide deck inside of a Quarto Website or Book by using:\n&lt;style&gt;\n.slide-deck {\n    border: 3px solid #dee2e6;\n    width: 100%;\n    height: 475px;\n}\n&lt;/style&gt;\n\n&lt;div&gt;\n```{=html}\n&lt;iframe class=\"slide-deck\" src=\"path/to/presentation/\"&gt;&lt;/iframe&gt;\n```\n&lt;/div&gt;\n\n\n\n\n\n\nNote\n\n\nAvoid using within a RevealJS presentation. Only 1 instance of webR should be running."
+  },
+  {
+    "objectID": "M2/M2_Presentation.html#fin",
+    "href": "M2/M2_Presentation.html#fin",
+    "title": "quarto-webr Demo RevealJS Document",
+    "section": "Fin",
+    "text": "Fin\nThanks for checking out the demo! Let’s head back to the documentation portal."
+  },
+  {
+    "objectID": "M2/M2_resources.html",
+    "href": "M2/M2_resources.html",
+    "title": "Example page R",
+    "section": "",
+    "text": "On this page, we set two options directly in the Quarto document. The rest of the options are coming from the _quarto.yml project file. These options are considered “global”.\nThe local options that we enabled are to show the webR status bar and to pre-install the ggplot2 package.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nNote\n\n\n\nIf we did not specify the package dependency in the document header, then we would need to add to the code cell the installation command of webr::install('ggplot2') prior to using library(ggplot2)."
+  },
+  {
+    "objectID": "slide_deck.html",
+    "href": "slide_deck.html",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "",
+    "text": "Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "M1/M1_resources.html",
+    "href": "M1/M1_resources.html",
+    "title": "Interactive-sql Example",
+    "section": "",
+    "text": "Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "M1/M1_resources.html#hr-sample-database",
+    "href": "M1/M1_resources.html#hr-sample-database",
+    "title": "Interactive-sql Example",
+    "section": "HR sample database",
+    "text": "HR sample database\nThe following database diagram illustrates the HR sample database:\n\n\n\n\n\n\nFigure 1: ERD of HR database\n\n\n\nAnd now, you can run all sort of queries from the tables of the HR databases."
+  },
+  {
+    "objectID": "M1/M1_resources.html#editable-example",
+    "href": "M1/M1_resources.html#editable-example",
+    "title": "Interactive-sql Example",
+    "section": "Editable Example",
+    "text": "Editable Example\n\nselect * from regions;"
+  },
+  {
+    "objectID": "M1/M1_resources.html#not-editable-example",
+    "href": "M1/M1_resources.html#not-editable-example",
+    "title": "Interactive-sql Example",
+    "section": "Not editable example",
+    "text": "Not editable example\nYou can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the database key in the yaml with a different name and use the option editable: false. Then all the code chunk with that name as class will be in not-editable mode. View the source code of this document by clicking &lt;/&gt; Code on top-right corner, it will be more clear, what I am trying to say.\n\nselect * from employees;"
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "1 Course Overview",
+    "text": "1 Course Overview\n\n1.1 Course Description\nThis SQL Bootcamp is designed to teach students, particularly those in applied business analytics and data science, the foundations and advanced techniques of SQL using both MySQL and PostgreSQL. Over nine modules, you will master fundamental SQL concepts such as querying data, working with joins, stored procedures, transactions, and more. Each module is accompanied by self-guided learning tasks, quizzes, and practical assessments to ensure a deep understanding of database concepts.\n\n\n1.2 Learning Outcomes\nUpon completing the SQL Bootcamp, you will be able to:\n\nUnderstand and write basic SQL queries.\nRetrieve, manipulate, and manage data efficiently.\nWork with multiple tables using joins and set operations.\nCreate and manage databases, tables, and indexes.\nUnderstand and implement stored procedures, functions, triggers, and transactions.\n\n\n\n1.3 Total Time Required\n\nInstructor-led learning: 2 hours (each module for 20 minutes)\nSelf-guided learning and assessments: 4 hours combined"
+  },
+  {
+    "objectID": "index.html#sql-course-outline",
+    "href": "index.html#sql-course-outline",
+    "title": "Welcome to Preparatory Labs for Databases",
+    "section": "2 SQL Course Outline",
+    "text": "2 SQL Course Outline\n\n2.1 Getting Started with SQL\n\nObjectives:\n\nIntroduction to relational databases, setting up MySQL and PostgreSQL, understanding SQL syntax and data types.\n\nLectures:\n\nIntroduction to MySQL and PostgreSQL: Overview of popular relational databases and setting up local environments.\nData Types: Understanding core SQL data types (e.g., int, varchar, date, etc.).\nCreating Databases and Tables: Steps to create a new database and define tables.\nInserting, Updating, and Deleting Records: Basic SQL operations for manipulating records.\n\n\n\n\n2.2 Retrieving Data with SQL\n\nObjectives:\n\nLearn to write SQL queries to retrieve data from a database.\n\nLectures:\n\nSELECT Statements: Introduction to the SELECT statement for querying data.\nWHERE Clauses and Filtering Data: Using WHERE to filter query results based on conditions.\nSorting Data with ORDER BY, LIMIT, and OFFSET: Techniques for ordering and limiting results.\nUsing Variables in Queries: Working with variables to enhance query flexibility.\n\n\n\n\n2.3 Modifying Data with SQL\n\nObjectives:\n\nMaster techniques for modifying data in SQL databases.\n\nLectures:\n\nINSERT, UPDATE, DELETE Statements: Essential commands for data manipulation.\nError Handling and Constraints: Handling constraints like PRIMARY KEY and FOREIGN KEY, and error management.\nManaging NULL Values and Default Values: Handling missing or default values in SQL.\nString Operations in SQL: Useful string functions like CONCAT, SUBSTRING, etc.\n\n\n\n\n2.4 Joins and Advanced Queries\n\nObjectives:\n\nLearn to retrieve and work with data across multiple tables using SQL joins.\n\nLectures:\n\nINNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN: Understanding different types of joins and their uses.\nUNION and UNION ALL: Combining results from multiple queries.\nGrouping and Aggregating Data with GROUP BY: Techniques for grouping data and using aggregate functions like SUM, COUNT, etc.\nHAVING Clauses: Filtering aggregated data with HAVING.\n\n\n\n\n2.5 Managing Database Structures\n\nObjectives:\n\nLearn to modify and optimize database structures for improved performance.\n\nLectures:\n\nALTER TABLE and MODIFY Operations: Altering table structures and modifying columns.\nCreating and Deleting Indexes: Indexing strategies for faster data retrieval.\nOptimizing Queries for Performance: Techniques to improve query execution times.\nHandling Large Datasets and Backups: Managing large datasets, backups, and recovery\n\n\n\n\n2.6 Stored Procedures and Triggers\n\nObjectives:\n\nIntroduction to automation and server-side programming with stored procedures and triggers.e\n\nLectures:\n\nCreating and Calling Stored Procedures: Writing reusable procedures for SQL operations.\nCreating and Managing Triggers: Automating actions with database triggers.\nError Handling in Stored Procedures: Managing errors within stored procedures.\nPerformance Considerations: Best practices for efficient stored procedures and triggers."
+  },
+  {
+    "objectID": "M3/M3_resources.html",
+    "href": "M3/M3_resources.html",
+    "title": "Example page Python",
+    "section": "",
+    "text": "On this page, we set two options directly in the Quarto document. The rest of the options are coming from the _quarto.yml project file. These options are considered “global”.\nimport pandas as pd \nimport numpy as np \n\ndf = pd.DataFrame(\n    {\n        \"A\": 1.0,\n        \"B\": pd.Timestamp(\"20130102\"),\n        \"C\": pd.Series(1, index=list(range(4)), dtype=\"float32\"),\n        \"D\": np.array([3] * 4, dtype=\"int32\"),\n        \"E\": pd.Categorical([\"test\", \"train\", \"test\", \"train\"]),\n        \"F\": \"foo\",\n    }\n)\n\n\ndf"
+  },
+  {
+    "objectID": "M3/M3_Presentation.html",
+    "href": "M3/M3_Presentation.html",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "",
+    "text": "Welcome to a demo RevealJS presentation that uses the quarto-pyodide extension to generate interactive code cells with Quarto and Pyodide.\nNot the right template? Let’s go back to the documentation portal"
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#welcome",
+    "href": "M3/M3_Presentation.html#welcome",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "",
+    "text": "Welcome to a demo RevealJS presentation that uses the quarto-pyodide extension to generate interactive code cells with Quarto and Pyodide.\nNot the right template? Let’s go back to the documentation portal"
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#pyodide-in-revealjs",
+    "href": "M3/M3_Presentation.html#pyodide-in-revealjs",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Pyodide in RevealJS",
+    "text": "Pyodide in RevealJS\nThis is a Pyodide-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#matplotlib-graphing-with-pyodide",
+    "href": "M3/M3_Presentation.html#matplotlib-graphing-with-pyodide",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "matplotlib Graphing with Pyodide",
+    "text": "matplotlib Graphing with Pyodide\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#quarto-pyodide-countdown",
+    "href": "M3/M3_Presentation.html#quarto-pyodide-countdown",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "quarto-{pyodide + countdown}",
+    "text": "quarto-{pyodide + countdown}\nPair code cells with a countdown timer to allow for practice\n{{&lt; countdown 00:05 top=0 &gt;}}\nFill in the following function to say hi!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#keyboard-shortcuts",
+    "href": "M3/M3_Presentation.html#keyboard-shortcuts",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Keyboard Shortcuts",
+    "text": "Keyboard Shortcuts\n\nRun selected code using either:\n\nmacOS: ⌘ + ↩︎/Return\nWindows/Linux: Ctrl + ↩︎/Enter\n\nRun the entire code by clicking the “Run code” button or pressing Shift+↩︎.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#fin",
+    "href": "M3/M3_Presentation.html#fin",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Fin",
+    "text": "Fin\nThanks for checking out the demo! Let’s head back to the documentation portal."
+  },
+  {
+    "objectID": "slide_deck.html#hr-sample-data",
+    "href": "slide_deck.html#hr-sample-data",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "HR sample data",
+    "text": "HR sample data\nHere we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+  },
+  {
+    "objectID": "slide_deck.html#erd-of-hr-database",
+    "href": "slide_deck.html#erd-of-hr-database",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "ERD of HR database",
+    "text": "ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\nFigure 1: ERD of HR database"
+  },
+  {
+    "objectID": "slide_deck.html#editable-example",
+    "href": "slide_deck.html#editable-example",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Editable Example",
+    "text": "Editable Example\nAnd now, you can run all sort of queries from the tables of the HR databases.\nselect * from regions;"
+  },
+  {
+    "objectID": "slide_deck.html#not-editable-example",
+    "href": "slide_deck.html#not-editable-example",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Not editable example",
+    "text": "Not editable example\nYou can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the database key in the yaml with a different name and use the option editable: false."
+  },
+  {
+    "objectID": "slide_deck.html#not-editable-example-1",
+    "href": "slide_deck.html#not-editable-example-1",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Not editable example",
+    "text": "Not editable example\nselect * from employees;"
+  },
+  {
+    "objectID": "slide_deck.html#welcome",
+    "href": "slide_deck.html#welcome",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-webr extension to generate interactive code cells with Quarto and webR.\n\n\n\n\n\n\nImportant\n\n\nThis template requires a pre-release version of Quarto that is 1.4.502 or greater that contains an updated copy of pandoc. For more details, please see Issue #14.\n\n\n\nNot the right template? Let’s go back to the documentation portal"
+  },
+  {
+    "objectID": "slide_deck.html#webr-in-revealjs",
+    "href": "slide_deck.html#webr-in-revealjs",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "webR in RevealJS",
+    "text": "webR in RevealJS\nThis is a webR-enabled code cell in a Quarto RevealJS document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#base-r-graphing-with-webr",
+    "href": "slide_deck.html#base-r-graphing-with-webr",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Base R Graphing with webR",
+    "text": "Base R Graphing with webR\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#ggplot2-in-webr",
+    "href": "slide_deck.html#ggplot2-in-webr",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "ggplot2 in webR",
+    "text": "ggplot2 in webR\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#help-documentation",
+    "href": "slide_deck.html#help-documentation",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Help Documentation",
+    "text": "Help Documentation\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#prints-warnings-and-errors",
+    "href": "slide_deck.html#prints-warnings-and-errors",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Prints, Warnings, and Errors",
+    "text": "Prints, Warnings, and Errors\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#keyboard-shortcuts",
+    "href": "slide_deck.html#keyboard-shortcuts",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Keyboard Shortcuts",
+    "text": "Keyboard Shortcuts\n\nRun selected code using either:\n\nmacOS: ⌘ + ↩︎/Return\nWindows/Linux: Ctrl + ↩︎/Enter\n\nRun the entire code by clicking the “Run code” button or pressing Shift+↩︎.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#embedded-slides",
+    "href": "slide_deck.html#embedded-slides",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Embedded Slides",
+    "text": "Embedded Slides\nYou can embed the slide deck inside of a Quarto Website or Book by using:\n&lt;style&gt;\n.slide-deck {\n    border: 3px solid #dee2e6;\n    width: 100%;\n    height: 475px;\n}\n&lt;/style&gt;\n\n&lt;div&gt;\n```{=html}\n&lt;iframe class=\"slide-deck\" src=\"path/to/presentation/\"&gt;&lt;/iframe&gt;\n```\n&lt;/div&gt;\n\n\n\n\n\n\nNote\n\n\nAvoid using within a RevealJS presentation. Only 1 instance of webR should be running."
+  },
+  {
+    "objectID": "slide_deck.html#fin",
+    "href": "slide_deck.html#fin",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Fin",
+    "text": "Fin\nThanks for checking out the demo! Let’s head back to the documentation portal."
+  },
+  {
+    "objectID": "slide_deck.html#welcome-1",
+    "href": "slide_deck.html#welcome-1",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-pyodide extension to generate interactive code cells with Quarto and Pyodide.\nNot the right template? Let’s go back to the documentation portal"
+  },
+  {
+    "objectID": "slide_deck.html#pyodide-in-revealjs",
+    "href": "slide_deck.html#pyodide-in-revealjs",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Pyodide in RevealJS",
+    "text": "Pyodide in RevealJS\nThis is a Pyodide-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#matplotlib-graphing-with-pyodide",
+    "href": "slide_deck.html#matplotlib-graphing-with-pyodide",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "matplotlib Graphing with Pyodide",
+    "text": "matplotlib Graphing with Pyodide\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#quarto-pyodide-countdown",
+    "href": "slide_deck.html#quarto-pyodide-countdown",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "quarto-{pyodide + countdown}",
+    "text": "quarto-{pyodide + countdown}\nPair code cells with a countdown timer to allow for practice\n{{&lt; countdown 00:05 top=0 &gt;}}\nFill in the following function to say hi!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#keyboard-shortcuts-1",
+    "href": "slide_deck.html#keyboard-shortcuts-1",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Keyboard Shortcuts",
+    "text": "Keyboard Shortcuts\n\nRun selected code using either:\n\nmacOS: ⌘ + ↩︎/Return\nWindows/Linux: Ctrl + ↩︎/Enter\n\nRun the entire code by clicking the “Run code” button or pressing Shift+↩︎.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "slide_deck.html#fin-1",
+    "href": "slide_deck.html#fin-1",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "Fin",
+    "text": "Fin\nThanks for checking out the demo! Let’s head back to the documentation portal."
   }
 ]

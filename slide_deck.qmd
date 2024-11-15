@@ -1,5 +1,12 @@
 ---
-title: "About"
+title: "Presentations"
+format:
+    revealjs:
+        slide-number: c/t
 ---
 
-About this site
+{{< include M1/M1_Presentation.qmd >}}
+
+{{< include M2/M2_Presentation.qmd >}}
+
+{{< include M3/M3_Presentation.qmd >}}
