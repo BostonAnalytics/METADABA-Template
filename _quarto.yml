@@ -37,26 +37,26 @@ website:
             href: M3/M3_testyourself.qmd
           - text: "Exercise"
             href: M3/M3_exercise.qmd
-      - text: "Module 4"
-        menu:
-          - text: "Lecture Notes"
-            href: M2/M2_resources.qmd
-          - text: "Additional Resources"
-            href: M2/M2_technicalhelp.qmd
-          - text: "Test Yourself"
-            href: M2/M2_testyourself.qmd
-          - text: "Exercise"
-            href: M2/M2_exercise.qmd
-      - text: "Module 5"
-        menu:
-          - text: "Lecture Notes"
-            href: M4/M4_resources.qmd
-          - text: "Additional Resources"
-            href: M4/M4_technicalhelp.qmd
-          - text: "Test Yourself"
-            href: M4/M4_testyourself.qmd
-          - text: "Exercise"
-            href: M4/M4_exercise.qmd
+      # - text: "Module 4"
+      #   menu:
+      #     - text: "Lecture Notes"
+      #       href: M2/M2_resources.qmd
+      #     - text: "Additional Resources"
+      #       href: M2/M2_technicalhelp.qmd
+      #     - text: "Test Yourself"
+      #       href: M2/M2_testyourself.qmd
+      #     - text: "Exercise"
+      #       href: M2/M2_exercise.qmd
+      # - text: "Module 5"
+      #   menu:
+      #     - text: "Lecture Notes"
+      #       href: M4/M4_resources.qmd
+      #     - text: "Additional Resources"
+      #       href: M4/M4_technicalhelp.qmd
+      #     - text: "Test Yourself"
+      #       href: M4/M4_testyourself.qmd
+      #     - text: "Exercise"
+      #       href: M4/M4_exercise.qmd
       # - text: "Module 6"
       #   menu:
       #     - text: "Lecture Notes"
@@ -77,12 +77,29 @@ website:
       #       href: M7/M7_testyourself.qmd
       #     - text: "Exercise"
       #       href: M7/M7_exercise.qmd
-
+embed-resources: true
 format:
   html:
-    theme: [cosmo, ./templates/scss/theme.scss]
-    css: [./templates/css/styles.css]
+    theme: [cosmo, ./scss/theme.scss]
+    css: [./css/styles.css]
     toc: true
+    grid:
+      sidebar-width: 100px
+      body-width: 1000px
+      margin-width: 400px
+      gutter-width: 1.5rem
 
+# Set default options for every webpage that may or may not include webR.
+webr: 
+  show-startup-message: false    # Display status of webR initialization
+#  show-header-message: false     # Check to see if COOP&COEP headers are set for speed.
+#  packages: ['ggplot2', 'dplyr'] # Pre-install dependencies
+#  base-url: ''                   # Base URL used for specifying where R WebAssembly binaries should be located
+#  home-dir: '/home/rstudio'      # Customize where the working directory is
+#  channel-type: 'post-message'   # Specify communication channel
+#  service-worker-url: ''         # URL from where to load JavaScript worker scripts when loading webR with the ServiceWorker communication channel.
 
+# Attach webR to every page
+filters:
+  - webr
 
