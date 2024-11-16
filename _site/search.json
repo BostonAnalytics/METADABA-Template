@@ -213,15 +213,15 @@
     "objectID": "slide_deck.html#hr-sample-data",
     "href": "slide_deck.html#hr-sample-data",
     "title": "{quarto-pyodide} Demo RevealJS Document",
-    "section": "HR sample data",
-    "text": "HR sample data\nHere we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
+    "section": "",
+    "text": "Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from www.sqltutorial.org. And to create the database, a SQLite script file was used when rendering the document. Read the extension docs for details."
   },
   {
     "objectID": "slide_deck.html#erd-of-hr-database",
     "href": "slide_deck.html#erd-of-hr-database",
     "title": "{quarto-pyodide} Demo RevealJS Document",
     "section": "ERD of HR database",
-    "text": "ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\nFigure 1: ERD of HR database"
+    "text": "ERD of HR database\nThe following database diagram illustrates the HR sample database:\n\n\n\n\n\n\nFigure 1: ERD of HR database"
   },
   {
     "objectID": "slide_deck.html#editable-example",
@@ -249,7 +249,7 @@
     "href": "slide_deck.html#welcome",
     "title": "{quarto-pyodide} Demo RevealJS Document",
     "section": "Welcome",
-    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-webr extension to generate interactive code cells with Quarto and webR.\n\n\n\n\n\n\nImportant\n\n\nThis template requires a pre-release version of Quarto that is 1.4.502 or greater that contains an updated copy of pandoc. For more details, please see Issue #14.\n\n\n\nNot the right template? Let’s go back to the documentation portal"
+    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-webr extension to generate interactive code cells with Quarto and webR.\n\n\n\n\n\n\nImportant\n\n\n\nThis template requires a pre-release version of Quarto that is 1.4.502 or greater that contains an updated copy of pandoc. For more details, please see Issue #14.\n\n\nNot the right template? Let’s go back to the documentation portal"
   },
   {
     "objectID": "slide_deck.html#webr-in-revealjs",
@@ -298,7 +298,7 @@
     "href": "slide_deck.html#embedded-slides",
     "title": "{quarto-pyodide} Demo RevealJS Document",
     "section": "Embedded Slides",
-    "text": "Embedded Slides\nYou can embed the slide deck inside of a Quarto Website or Book by using:\n&lt;style&gt;\n.slide-deck {\n    border: 3px solid #dee2e6;\n    width: 100%;\n    height: 475px;\n}\n&lt;/style&gt;\n\n&lt;div&gt;\n```{=html}\n&lt;iframe class=\"slide-deck\" src=\"path/to/presentation/\"&gt;&lt;/iframe&gt;\n```\n&lt;/div&gt;\n\n\n\n\n\n\nNote\n\n\nAvoid using within a RevealJS presentation. Only 1 instance of webR should be running."
+    "text": "Embedded Slides\nYou can embed the slide deck inside of a Quarto Website or Book by using:\n&lt;style&gt;\n.slide-deck {\n    border: 3px solid #dee2e6;\n    width: 100%;\n    height: 475px;\n}\n&lt;/style&gt;\n\n&lt;div&gt;\n```{=html}\n&lt;iframe class=\"slide-deck\" src=\"path/to/presentation/\"&gt;&lt;/iframe&gt;\n```\n&lt;/div&gt;\n\n\n\n\n\n\nNote\n\n\n\nAvoid using within a RevealJS presentation. Only 1 instance of webR should be running."
   },
   {
     "objectID": "slide_deck.html#fin",
