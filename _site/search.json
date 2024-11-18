@@ -171,15 +171,15 @@
     "objectID": "M3/M3_Presentation.html#welcome",
     "href": "M3/M3_Presentation.html#welcome",
     "title": "{quarto-pyodide} Demo RevealJS Document",
-    "section": "",
-    "text": "Welcome to a demo RevealJS presentation that uses the quarto-pyodide extension to generate interactive code cells with Quarto and Pyodide.\nNot the right template? Let’s go back to the documentation portal"
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to a demo RevealJS presentation that uses the quarto-pyodide extension to generate interactive code cells with Quarto and Pyodide.\nNot the right template? Let’s go back to the documentation portal (Monmonier 1985)"
   },
   {
     "objectID": "M3/M3_Presentation.html#pyodide-in-revealjs",
     "href": "M3/M3_Presentation.html#pyodide-in-revealjs",
     "title": "{quarto-pyodide} Demo RevealJS Document",
     "section": "Pyodide in RevealJS",
-    "text": "Pyodide in RevealJS\nThis is a Pyodide-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Pyodide in RevealJS\nMonmonier (1985) This is a Pyodide-enabled code cell in a Quarto HTML document.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "M3/M3_Presentation.html#matplotlib-graphing-with-pyodide",
@@ -348,5 +348,12 @@
     "title": "{quarto-pyodide} Demo RevealJS Document",
     "section": "Fin",
     "text": "Fin\nThanks for checking out the demo! Let’s head back to the documentation portal."
+  },
+  {
+    "objectID": "M3/M3_Presentation.html#references",
+    "href": "M3/M3_Presentation.html#references",
+    "title": "{quarto-pyodide} Demo RevealJS Document",
+    "section": "References",
+    "text": "References\n\n\n\n\nMonmonier, Mark. 1985. “Semiology of Graphics: Diagrams, Networks, Maps.” JSTOR."
   }
 ]
