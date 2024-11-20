@@ -4,7 +4,8 @@ subtitle: "Run SQL Interactively from HTML Documents Made with Quarto"
 author: Shafayet Khan Shafee
 date: last-modified
 date-format: "DD MMM, YYYY"
-code-tools: true
+format: 
+    html: default
 filters:
   - interactive-sql
 databases:

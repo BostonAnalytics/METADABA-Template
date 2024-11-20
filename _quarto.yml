@@ -78,7 +78,6 @@ website:
       #       href: M7/M7_testyourself.qmd
       #     - text: "Exercise"
       #       href: M7/M7_exercise.qmd
-embed-resources: true
 format:
   html:
     theme: [cosmo, ./scss/theme.scss]
