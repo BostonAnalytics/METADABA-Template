@@ -1,6 +1,7 @@
 ---
 title: "{quarto-pyodide} Demo RevealJS Document"
 format: revealjs
+bibliography: [../references.bib]
 filters:
   - pyodide
 ---
@@ -9,11 +10,11 @@ filters:
 
 Welcome to a demo RevealJS presentation that uses the [`quarto-pyodide`](https://github.com/coatless-quarto/pyodide) extension to generate interactive code cells with [Quarto](https://quarto.org) and [Pyodide](https://pyodide.org/en/stable/).
 
-Not the right template? Let's go back to the [documentation portal](../../)
+Not the right template? Let's go back to the [documentation portal](../../) [@monmonier1985semiology]
 
 ## Pyodide in RevealJS 
 
-This is a Pyodide-enabled code cell in a Quarto HTML document.
+@monmonier1985semiology This is a Pyodide-enabled code cell in a Quarto HTML document.
 
 ```{pyodide-python}
 n = 5
@@ -72,3 +73,5 @@ print("Hello quarto-pyodide RevealJS world!")
 
 Thanks for checking out the demo! Let's head back to
 the [documentation portal](../../).
+
+## References
