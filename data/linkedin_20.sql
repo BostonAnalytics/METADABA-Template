@@ -1,5 +1,3 @@
--- sample database taken from https://www.sqltutorial.org/sql-sample-database/
-
 CREATE TABLE benefits (
   benefit_id INTEGER PRIMARY KEY NOT NULL,
   benefit_type varchar(255) NOT NULL,
