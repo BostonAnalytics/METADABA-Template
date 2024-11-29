@@ -4,7 +4,7 @@ CREATE TABLE `benefits` (
   `benefit_id` bigint NOT NULL,
   `benefit_type` varchar(255) NOT NULL,
   `benefit_description` text,
-  PRIMARY KEY (`benefit_id`),
+  PRIMARY KEY (`benefit_id`)
 );
 
 
