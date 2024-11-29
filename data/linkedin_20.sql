@@ -50,6 +50,13 @@ CREATE TABLE `job_benefits` (
   );
 
 
+CREATE TABLE `job_industries` (
+  `job_id` bigint NOT NULL,
+  `industry_id` bigint NOT NULL,
+  PRIMARY KEY (`job_id`,`industry_id`)
+);
+
+
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (1,'Medical insurance','Medical insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (2,'Vision insurance','Vision insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (3,'Dental insurance','Dental insurance');
