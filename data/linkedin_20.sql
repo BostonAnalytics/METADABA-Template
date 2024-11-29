@@ -42,6 +42,20 @@ CREATE TABLE employee_count (
 );
 
 
+CREATE TABLE `job_benefits` (
+  `job_id` bigint NOT NULL,
+  `benefit_id` bigint NOT NULL,
+  `inferred` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`job_id`,`benefit_id`)
+  );
+
+
+CREATE TABLE `job_industries` (
+  `job_id` bigint NOT NULL,
+  `industry_id` bigint NOT NULL,
+  PRIMARY KEY (`job_id`,`industry_id`)
+  );
+
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (1,'Medical insurance','Medical insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (2,'Vision insurance','Vision insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (3,'Dental insurance','Dental insurance');
@@ -153,3 +167,36 @@ INSERT INTO `employee_count` VALUES (1090,71060,2388556,'2024-04-11 23:45:11');
 INSERT INTO `employee_count` VALUES (1090,70714,2390822,'2024-04-17 17:31:23');
 INSERT INTO `employee_count` VALUES (1090,70309,2391005,'2024-04-18 17:32:52');
 INSERT INTO `employee_count` VALUES (1090,69239,2390290,'2024-04-19 17:32:19');
+
+
+
+INSERT INTO `job_benefits` VALUES (3884842905,5,1);
+INSERT INTO `job_benefits` VALUES (3884844689,5,1);
+INSERT INTO `job_benefits` VALUES (3884845441,5,1);
+INSERT INTO `job_benefits` VALUES (3884848075,5,1);
+INSERT INTO `job_benefits` VALUES (3900957966,5,1);
+INSERT INTO `job_benefits` VALUES (3900958956,5,1);
+INSERT INTO `job_benefits` VALUES (3900959635,5,1);
+INSERT INTO `job_benefits` VALUES (3900959657,5,1);
+
+
+INSERT INTO `job_industries` VALUES (3884842897,3);
+INSERT INTO `job_industries` VALUES (3884842905,3);
+INSERT INTO `job_industries` VALUES (3884844684,3);
+INSERT INTO `job_industries` VALUES (3884844686,3);
+INSERT INTO `job_industries` VALUES (3884844689,3);
+INSERT INTO `job_industries` VALUES (3884845441,3);
+INSERT INTO `job_industries` VALUES (3884845442,3);
+INSERT INTO `job_industries` VALUES (3884848075,3);
+INSERT INTO `job_industries` VALUES (3900957963,3);
+INSERT INTO `job_industries` VALUES (3900957966,3);
+INSERT INTO `job_industries` VALUES (3900958955,3);
+INSERT INTO `job_industries` VALUES (3900958956,3);
+INSERT INTO `job_industries` VALUES (3900959635,3);
+INSERT INTO `job_industries` VALUES (3900959644,3);
+INSERT INTO `job_industries` VALUES (3900959657,3);
+INSERT INTO `job_industries` VALUES (3900959664,3);
+INSERT INTO `job_industries` VALUES (3900960352,3);
+INSERT INTO `job_industries` VALUES (3900960375,3);
+INSERT INTO `job_industries` VALUES (3900960378,3);
+INSERT INTO `job_industries` VALUES (3900960379,3);
