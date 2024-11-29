@@ -23,6 +23,31 @@ CREATE TABLE `companies` (
   PRIMARY KEY (`company_id`)
 );
 
+
+CREATE TABLE `company_industries` (
+  `company_id` bigint NOT NULL,
+  `industry` varchar(255) NOT NULL,
+  `industry_description` longtext,
+  PRIMARY KEY (`company_id`,`industry`)
+);
+
+
+CREATE TABLE `company_specialities` (
+  `company_id` bigint NOT NULL,
+  `speciality_id` bigint NOT NULL,
+  PRIMARY KEY (`company_id`,`speciality_id`),
+  KEY `speciality_id` (`speciality_id`)
+);
+
+CREATE TABLE `employee_count` (
+  `company_id` bigint NOT NULL,
+  `employee_count` int DEFAULT NULL,
+  `follower_count` int DEFAULT NULL,
+  `time_recorded` datetime NOT NULL,
+  PRIMARY KEY (`company_id`,`time_recorded`)
+);
+
+
 INSERT INTO `benefits` VALUES (1,'Medical insurance','Medical insurance');
 INSERT INTO `benefits` VALUES (2,'Vision insurance','Vision insurance');
 INSERT INTO `benefits` VALUES (3,'Dental insurance','Dental insurance');
