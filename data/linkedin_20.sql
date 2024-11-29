@@ -1,15 +1,13 @@
 -- sample database taken from https://www.sqltutorial.org/sql-sample-database/
 
 CREATE TABLE `benefits` (
-  `benefit_id` bigint NOT NULL,
+  `benefit_id` bigint PRIMARY KEY AUTOINCREMENT NOT NULL,
   `benefit_type` varchar(255) NOT NULL,
-  `benefit_description` text,
-  PRIMARY KEY (`benefit_id`)
-);
+  `benefit_description` text);
 
 
 CREATE TABLE `companies` (
-  `company_id` bigint NOT NULL,
+  `company_id` bigint PRIMARY KEY NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` text,
   `company_size` int DEFAULT NULL,
@@ -18,8 +16,7 @@ CREATE TABLE `companies` (
   `city` varchar(255) DEFAULT NULL,
   `zip_code` varchar(50) DEFAULT NULL,
   `address` text,
-  `url` text,
-  PRIMARY KEY (`company_id`)
+  `url` text
 );
 
 
@@ -34,8 +31,7 @@ CREATE TABLE `company_industries` (
 CREATE TABLE `company_specialities` (
   `company_id` bigint NOT NULL,
   `speciality_id` bigint NOT NULL,
-  PRIMARY KEY (`company_id`,`speciality_id`),
-  KEY `speciality_id` (`speciality_id`)
+  PRIMARY KEY (`company_id`,`speciality_id`)
 );
 
 CREATE TABLE `employee_count` (
