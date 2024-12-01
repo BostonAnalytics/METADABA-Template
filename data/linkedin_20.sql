@@ -55,7 +55,7 @@ CREATE TABLE `job_industries` (
 
 
 CREATE TABLE `job_postings` (
-  `job_id`  BIGINT NOT NULL,
+  `job_id`  BIGINT PRIMARY KEY NOT NULL,
   `title` VARCHAR(255) DEFAULT NULL,
   `description` text,
   `pay_period` VARCHAR(50) DEFAULT NULL,
@@ -82,9 +82,8 @@ CREATE TABLE `job_postings` (
   `normalized_salary` decimal(10,2) DEFAULT NULL,
   `zip_code` VARCHAR(10) DEFAULT NULL,
   `fips` INT DEFAULT NULL,
-  PRIMARY KEY (`job_id`),
-  KEY `fk_company_id` (`company_id`)
-) ;
+   FOREIGN KEY (`company_id`) REFERENCES companies(`company_id`)
+);
 
 
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (1,'Medical insurance','Medical insurance');
