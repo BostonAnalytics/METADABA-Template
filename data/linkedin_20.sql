@@ -7,8 +7,7 @@ CREATE TABLE benefits (
 CREATE TABLE companies (
   company_id INTEGER PRIMARY KEY NOT NULL,
   company_name varchar(255) DEFAULT NULL,
-  company_description text,
-  company_size int DEFAULT NULL,
+  company_size INTEGER DEFAULT NULL,
   state varchar(50) DEFAULT NULL,
   country varchar(2) DEFAULT NULL,
   city varchar(255) DEFAULT NULL,
@@ -33,24 +32,24 @@ CREATE TABLE company_specialities (
 
 CREATE TABLE employee_count (
   company_id INTEGER NOT NULL,
-  employee_count int DEFAULT NULL,
-  follower_count int DEFAULT NULL,
+  employee_count INTEGER DEFAULT NULL,
+  follower_count INTEGER DEFAULT NULL,
   time_recorded datetime NOT NULL,
   PRIMARY KEY (company_id,time_recorded)
 );
 
 
 CREATE TABLE `job_benefits` (
-  `job_id` bigint NOT NULL,
-  `benefit_id` bigint NOT NULL,
-  `inferred` tinyint(1) DEFAULT '0',
+  `job_id` bigINTEGER NOT NULL,
+  `benefit_id` bigINTEGER NOT NULL,
+  `inferred` tinyINT(1) DEFAULT '0',
   PRIMARY KEY (`job_id`,`benefit_id`)
   );
 
 
 CREATE TABLE `job_industries` (
-  `job_id` bigint NOT NULL,
-  `industry_id` bigint NOT NULL,
+  `job_id` bigINT NOT NULL,
+  `industry_id` bigINT NOT NULL,
   PRIMARY KEY (`job_id`,`industry_id`)
 );
 
@@ -201,12 +200,12 @@ INSERT INTO `job_industries` VALUES (3900960378,3);
 INSERT INTO `job_industries` VALUES (3900960379,3);
 
 
+INSERT INTO `companies` VALUES
+(1009, 'IBM', 7, 'NY', 'US', 'Armonk, New York', '10504', 'INTernational Business Machines Corp.', 'https://www.linkedin.com/company/ibm');
 INSERT INTO companies VALUES
-(1009, 'IBM', """At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' into what is. Let's create something that will change everything.""", 7, 'NY', 'US', 'Armonk, New York', '10504', 'International Business Machines Corp.', 'https://www.linkedin.com/company/ibm');
+(1016, 'GE HealthCare', 7, NULL, 'US', 'Chicago', NULL, NULL, 'https://www.linkedin.com/company/gehealthcare');
 INSERT INTO companies VALUES
-(1016, 'GE HealthCare', """Every day millions of people feel the impact of our intelligent devices, advanced analytics and artificial intelligence. As a leading global medical technology and digital solutions innovator, GE HealthCare enables clinicians to make faster, more informed decisions through intelligent devices, data analytics, applications and services, supported by its Edison intelligence platform.\n\nWith over 100 years of healthcare industry experience and around 50,000 employees globally, the company operates at the center of an ecosystem working toward precision health, digitizing healthcare, helping drive productivity and improve outcomes for patients, providers, health systems and researchers around the world.\n\nWe embrace a culture of respect, transparency, integrity and diversity and we work to create a world where healthcare has no limits.""", 7, NULL, 'US', 'Chicago', NULL, NULL, 'https://www.linkedin.com/company/gehealthcare');
-INSERT INTO companies VALUES
-(1025, 'Hewlett Packard Enterprise', """Official LinkedIn of Hewlett Packard Enterprise, the global edge-to-cloud company. Sharing our passion and purpose through technology and innovation""", 7, 'Texas', 'US', 'Houston', '77389', '1701 E Mossy Oaks Rd Spring', 'https://www.linkedin.com/company/hewlett-packard-enterprise');
+(1025, 'Hewlett Packard Enterprise', 7, 'Texas', 'US', 'Houston', '77389', '1701 E Mossy Oaks Rd Spring', 'https://www.linkedin.com/company/hewlett-packard-enterprise');
 
 INSERT INTO companies VALUES
 (1028, 'Oracle', """We’re a cloud technology company that provides organizations around the world with computing infrastructure and software to help them innovate, unlock efficiencies and become more effective. We also created the world’s first – and only – autonomous database to help organize and secure our customers’ data.\n\nOracle Cloud Infrastructure offers higher performance, security, and cost savings. It is designed so businesses can move workloads easily from on-premises systems to the cloud, and between cloud and on-premises and other clouds. Oracle Cloud applications provide business leaders with modern applications that help them innovate, attain sustainable growth, and become more resilient.\n\nThe work we do is not only transforming the world of business--it's helping defend governments, and advance scientific and medical research. From nonprofits to companies of all sizes, millions of people use our tools to streamline supply chains, make HR more human, quickly pivot to a new financial plan, and connect data and people around the world""", 7, 'Texas', 'US', 'Austin', '78741', '2300 Oracle Way', 'https://www.linkedin.com/company/oracle');
@@ -217,7 +216,7 @@ INSERT INTO companies VALUES
 (1035, 'Microsoft', """Every company has a mission. What's ours? To empower every person and every organization to achieve more. We believe technology can and should be a force for good and that meaningful innovation contributes to a brighter world in the future and today.""", 7, 'Washington', 'US', 'Redmond', '98052', '1 Microsoft Way', 'https://www.linkedin.com/company/microsoft');
 
 INSERT INTO companies VALUES
-(1038, 'Deloitte', """Deloitte drives progress. Our firms around the world help clients become leaders wherever they choose to compete. Deloitte invests in outstanding people of diverse talents and backgrounds and empowers them to achieve more than they could elsewhere.""" 7, NULL, 'OO', 'Worldwide', NULL, 'Worldwide', 'https://www.linkedin.com/company/deloitte');
+(1038, 'Deloitte', """Deloitte drives progress. Our firms around the world help clients become leaders wherever they choose to compete. Deloitte invests in outstanding people of diverse talents and backgrounds and empowers them to achieve more than they could elsewhere.""", 7, NULL, 'OO', 'Worldwide', NULL, 'Worldwide', 'https://www.linkedin.com/company/deloitte');
 
 INSERT INTO companies VALUES
 (1043, 'Siemens', """Siemens AG (Berlin and Munich) is a leading technology company focused on industry, infrastructure, transport, and healthcare.""", 7, NULL, 'DE', 'Munich', '80333', 'Werner-von-Siemens-Straße 1', 'https://www.linkedin.com/company/siemens');
