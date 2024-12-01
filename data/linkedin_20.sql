@@ -253,13 +253,7 @@ INSERT INTO companies VALUES
 (1052, 'AT&T', 7, 'TX', 'US', 'Dallas', '75202', '208 S. Akard Street', 'https://www.linkedin.com/company/att');
 
 
-INSERT INTO job_postings (
-    job_id, company_name, title, description, max_salary, pay_period, location, company_id, views, med_salary,
-    min_salary, formatted_work_type, applies, original_listed_time, remote_allowed, job_posting_url,
-    application_url, application_type, expiry, closed_time, formatted_experience_level, skills_desc, 
-    listed_time, posting_domain, sponsored, work_type, currency, compensation_type, normalized_salary, 
-    zip_code, fips
-) VALUES
+INSERT INTO job_postingsVALUES
 (
     921716, 'Corcoran Sawyer Smith', 'Marketing Coordinator', """Job descriptionA leading real estate firm in New Jersey is seeking an administrative Marketing Coordinator with some experience in graphic design. You will be working closely with our fun, kind, ambitious members of the sales team and our dynamic executive team on a daily basis. This is an opportunity to be part of a fast-growing, highly respected real estate brokerage with a reputation for exceptional marketing and extraordinary culture of cooperation and inclusion. ... """, 
     20, 'HOURLY', 'Princeton, NJ', 2774458, 20, 17, 
