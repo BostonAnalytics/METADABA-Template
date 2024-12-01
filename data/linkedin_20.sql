@@ -7,7 +7,6 @@ CREATE TABLE benefits (
 CREATE TABLE companies (
   company_id INTEGER PRIMARY KEY NOT NULL,
   company_name varchar(255) DEFAULT NULL,
-  company_description longtext,
   company_size INTEGER DEFAULT NULL,
   state varchar(50) DEFAULT NULL,
   country varchar(2) DEFAULT NULL,
@@ -201,18 +200,17 @@ INSERT INTO `job_industries` VALUES (3900960378,3);
 INSERT INTO `job_industries` VALUES (3900960379,3);
 
 
-INSERT INTO companies VALUES (1009, 'IBM', "At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you\'re searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe\'re here to help every creator turn their 'what if' into what is. Let's create something that will change everything.", 7, 'NY', 'US', 'Armonk, New York', '10504', 'International Business Machines Corp.', 'https://www.linkedin.com/company/ibm');
-INSERT INTO companies VALUES (1016, 'GE HealthCare', "Every day millions of people feel the impact of our intelligent devices, advanced analytics and artificial intelligence. As a leading global medical technology and digital solutions innovator, GE HealthCare enables clinicians to make faster, more informed decisions through intelligent devices, data analytics, applications and services, supported by its Edison intelligence platform.\nWith over 100 years of healthcare industry experience and around 50,000 employees globally, the company operates at the center of an ecosystem working toward precision health, digitizing healthcare, helping drive productivity and improve outcomes for patients, providers, health systems and researchers around the world.\nWe embrace a culture of respect, transparency, integrity and diversity and we work to create a world where healthcare has no limits.", 7, NULL, 'US', 'Chicago', NULL, NULL, 'https://www.linkedin.com/company/gehealthcare');
-INSERT INTO companies VALUES (1025, 'Hewlett Packard Enterprise', " ", 7 'Texas', 'US', 'Houston', '77389', '1701 E Mossy Oaks Rd Spring', 'https://www.linkedin.com/company/hewlett-packard-enterprise');
+INSERT INTO companies VALUES (1016, 'GE HealthCare', 7, NULL, 'US', 'Chicago', NULL, NULL, 'https://www.linkedin.com/company/gehealthcare');
+INSERT INTO companies VALUES (1025, 'Hewlett Packard Enterprise', 7, 'Texas', 'US', 'Houston', '77389', '1701 E Mossy Oaks Rd Spring', 'https://www.linkedin.com/company/hewlett-packard-enterprise');
 
-INSERT INTO companies VALUES (1028, 'Oracle', " ", 7 'Texas', 'US', 'Austin', '78741', '2300 Oracle Way', 'https://www.linkedin.com/company/oracle');
-INSERT INTO companies VALUES (1033, 'Accenture', " ", 7 NULL, 'IE', 'Dublin 2', NULL, 'Grand Canal Harbour', 'https://www.linkedin.com/company/accenture');
+INSERT INTO companies VALUES (1028, 'Oracle', 7, 'Texas', 'US', 'Austin', '78741', '2300 Oracle Way', 'https://www.linkedin.com/company/oracle');
+INSERT INTO companies VALUES (1033, 'Accenture', 7, NULL, 'IE', 'Dublin 2', NULL, 'Grand Canal Harbour', 'https://www.linkedin.com/company/accenture');
 
-INSERT INTO companies VALUES (1035, 'Microsoft', " ", 7 'Washington', 'US', 'Redmond', '98052', '1 Microsoft Way', 'https://www.linkedin.com/company/microsoft');
+INSERT INTO companies VALUES (1035, 'Microsoft', 7, 'Washington', 'US', 'Redmond', '98052', '1 Microsoft Way', 'https://www.linkedin.com/company/microsoft');
 
-INSERT INTO companies VALUES (1038, 'Deloitte', " ", 7 NULL, 'OO', 'Worldwide', NULL, 'Worldwide', 'https://www.linkedin.com/company/deloitte');
+INSERT INTO companies VALUES (1038, 'Deloitte', 7, NULL, 'OO', 'Worldwide', NULL, 'Worldwide', 'https://www.linkedin.com/company/deloitte');
 
-INSERT INTO companies VALUES (1043, 'Siemens', " ", 7 NULL, 'DE', 'Munich', '80333', 'Werner-von-Siemens-Straße 1', 'https://www.linkedin.com/company/siemens');
-INSERT INTO companies VALUES(1044, 'PwC', " ", 7 NULL, 'GB', NULL, NULL, '1 Embankment Place', 'https://www.linkedin.com/company/pwc');
+INSERT INTO companies VALUES (1043, 'Siemens', 7, NULL, 'DE', 'Munich', '80333', 'Werner-von-Siemens-Straße 1', 'https://www.linkedin.com/company/siemens');
+INSERT INTO companies VALUES(1044, 'PwC', 7, NULL, 'GB', NULL, NULL, '1 Embankment Place', 'https://www.linkedin.com/company/pwc');
 INSERT INTO companies VALUES
-(1052, 'AT&T', " ", 7 'TX', 'US', 'Dallas', '75202', '208 S. Akard Street', 'https://www.linkedin.com/company/att');
+(1052, 'AT&T', 7, 'TX', 'US', 'Dallas', '75202', '208 S. Akard Street', 'https://www.linkedin.com/company/att');
