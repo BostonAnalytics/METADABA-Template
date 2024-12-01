@@ -9,12 +9,12 @@ CREATE TABLE companies (
   company_name varchar(255) DEFAULT NULL,
   company_description text,
   company_size int DEFAULT NULL,
-  `state` varchar(50) DEFAULT NULL,
+  state varchar(50) DEFAULT NULL,
   country varchar(2) DEFAULT NULL,
   city varchar(255) DEFAULT NULL,
   zip_code varchar(50) DEFAULT NULL,
-  `address` text,
-  `url` text
+  address text,
+  url text
 );
 
 CREATE TABLE company_industries (
