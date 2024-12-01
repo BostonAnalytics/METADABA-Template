@@ -200,8 +200,6 @@ INSERT INTO `job_industries` VALUES (3900960378,3);
 INSERT INTO `job_industries` VALUES (3900960379,3);
 
 
-INSERT INTO `companies` VALUES
-(1009, 'IBM', """At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' INTo what is. Let's create something that will change everything.""", 7, 'NY', 'US', 'Armonk, New York', '10504', 'INTernational Business Machines Corp.', 'https://www.linkedin.com/company/ibm');
 INSERT INTO companies VALUES
 (1016, 'GE HealthCare', """Every day millions of people feel the impact of our INTelligent devices, advanced analytics and artificial INTelligence. As a leading global medical technology and digital solutions innovator, GE HealthCare enables clinicians to make faster, more informed decisions through INTelligent devices, data analytics, applications and services, supported by its Edison INTelligence platform.\n\nWith over 100 years of healthcare industry experience and around 50,000 employees globally, the company operates at the center of an ecosystem working toward precision health, digitizing healthcare, helping drive productivity and improve outcomes for patients, providers, health systems and researchers around the world.\n\nWe embrace a culture of respect, transparency, INTegrity and diversity and we work to create a world where healthcare has no limits.""", 7, NULL, 'US', 'Chicago', NULL, NULL, 'https://www.linkedin.com/company/gehealthcare');
 INSERT INTO companies VALUES
