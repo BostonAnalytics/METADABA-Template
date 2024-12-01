@@ -56,7 +56,7 @@ CREATE TABLE `job_industries` (
 
 CREATE TABLE job_postings (
   job_id INTEGER PRIMARY KEY NOT NULL,  -- Unique identifier for the job posting
-  company_id INTEGER NOT NULL,          -- Foreign key referencing the companies table
+  company_name VARCHAR(255) NOT NULL,          -- Foreign key referencing the companies table
   title VARCHAR(255) NOT NULL,          -- Title of the job posting
   description TEXT,                     -- Detailed description of the job
   max_salary DECIMAL(10, 2),            -- Maximum salary for the job
@@ -253,7 +253,7 @@ INSERT INTO companies VALUES
 (1052, 'AT&T', 7, 'TX', 'US', 'Dallas', '75202', '208 S. Akard Street', 'https://www.linkedin.com/company/att');
 
 
-INSERT INTO job_postingsVALUES
+INSERT INTO job_postings VALUES
 (
     921716, 'Corcoran Sawyer Smith', 'Marketing Coordinator', """Job descriptionA leading real estate firm in New Jersey is seeking an administrative Marketing Coordinator with some experience in graphic design. You will be working closely with our fun, kind, ambitious members of the sales team and our dynamic executive team on a daily basis. This is an opportunity to be part of a fast-growing, highly respected real estate brokerage with a reputation for exceptional marketing and extraordinary culture of cooperation and inclusion. ... """, 
     20, 'HOURLY', 'Princeton, NJ', 2774458, 20, 17, 
