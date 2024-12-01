@@ -7,6 +7,7 @@ CREATE TABLE benefits (
 CREATE TABLE companies (
   company_id INTEGER PRIMARY KEY NOT NULL,
   company_name varchar(255) DEFAULT NULL,
+  company_description longtext,
   company_size INTEGER DEFAULT NULL,
   state varchar(50) DEFAULT NULL,
   country varchar(2) DEFAULT NULL,
