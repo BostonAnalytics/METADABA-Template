@@ -54,6 +54,43 @@ CREATE TABLE `job_industries` (
 );
 
 
+CREATE TABLE job_postings (
+  job_id INTEGER PRIMARY KEY NOT NULL,  -- Unique identifier for the job posting
+  company_id INTEGER NOT NULL,          -- Foreign key referencing the companies table
+  title VARCHAR(255) NOT NULL,          -- Title of the job posting
+  description TEXT,                     -- Detailed description of the job
+  max_salary DECIMAL(10, 2),            -- Maximum salary for the job
+  med_salary DECIMAL(10, 2),            -- Median salary for the job
+  min_salary DECIMAL(10, 2),            -- Minimum salary for the job
+  pay_period VARCHAR(50),               -- Pay period (Hourly, Monthly, Yearly)
+  formatted_work_type VARCHAR(50),      -- Work type (Fulltime, Parttime, Contract)
+  location VARCHAR(255),                -- Location of the job
+  applies INTEGER DEFAULT 0,            -- Number of applications submitted
+  original_listed_time DATETIME,        -- Original time when the job was listed
+  remote_allowed BOOLEAN DEFAULT FALSE, -- Whether the job permits remote work
+  views INTEGER DEFAULT 0,              -- Number of views on the job posting
+  job_posting_url TEXT,                 -- URL to the job posting on a platform
+  application_url TEXT,                 -- URL where applications can be submitted
+  application_type VARCHAR(50),         -- Type of application process (offsite, complex/simple onsite)
+  expiry DATETIME,                      -- Expiration date or time for the job listing
+  closed_time DATETIME,                 -- Time when the job listing was closed
+  formatted_experience_level VARCHAR(50), -- Experience level required (entry, associate, executive, etc.)
+  skills_desc TEXT,                     -- Description of required skills for the job
+  listed_time DATETIME,                 -- Time when the job was listed
+  posting_domain VARCHAR(255),          -- Domain of the website with the posting
+  sponsored BOOLEAN DEFAULT FALSE,      -- Whether the job listing is sponsored
+  work_type VARCHAR(50),                -- General type of work (e.g., Engineering, Sales)
+  currency VARCHAR(10),                 -- Currency of the salary
+  compensation_type VARCHAR(50),        -- Type of compensation (Fixed, Variable)
+  scraped BOOLEAN DEFAULT FALSE,        -- Whether the job has been scraped by `details_retriever`
+  inferred_benefits TEXT,               -- Benefits inferred from the posting (optional)
+  years_experience TEXT,                -- Years of experience required (optional)
+  job_region TEXT,                      -- Region of the job (optional)
+  degree TEXT,                          -- Required degree (optional)
+  FOREIGN KEY (company_id) REFERENCES companies(company_id) -- Relation to companies table
+);
+
+
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (1,'Medical insurance','Medical insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (2,'Vision insurance','Vision insurance');
 INSERT INTO benefits(benefit_id, benefit_type, benefit_description) VALUES (3,'Dental insurance','Dental insurance');
@@ -214,3 +251,47 @@ INSERT INTO companies VALUES (1043, 'Siemens', 7, NULL, 'DE', 'Munich', '80333',
 INSERT INTO companies VALUES(1044, 'PwC', 7, NULL, 'GB', NULL, NULL, '1 Embankment Place', 'https://www.linkedin.com/company/pwc');
 INSERT INTO companies VALUES
 (1052, 'AT&T', 7, 'TX', 'US', 'Dallas', '75202', '208 S. Akard Street', 'https://www.linkedin.com/company/att');
+
+
+INSERT INTO job_postings (
+    job_id, company_name, title, description, max_salary, pay_period, location, company_id, views, med_salary,
+    min_salary, formatted_work_type, applies, original_listed_time, remote_allowed, job_posting_url,
+    application_url, application_type, expiry, closed_time, formatted_experience_level, skills_desc, 
+    listed_time, posting_domain, sponsored, work_type, currency, compensation_type, normalized_salary, 
+    zip_code, fips
+) VALUES
+(
+    921716, 'Corcoran Sawyer Smith', 'Marketing Coordinator', """Job descriptionA leading real estate firm in New Jersey is seeking an administrative Marketing Coordinator with some experience in graphic design. You will be working closely with our fun, kind, ambitious members of the sales team and our dynamic executive team on a daily basis. This is an opportunity to be part of a fast-growing, highly respected real estate brokerage with a reputation for exceptional marketing and extraordinary culture of cooperation and inclusion. ... """, 
+    20, 'HOURLY', 'Princeton, NJ', 2774458, 20, 17, 
+    NULL, 'Full-time', 2, 1.71E+12, NULL, 'https://www.linkedin.com/jobs/view/921716/?trk=jobs_biz_prem_srch',
+    NULL, 'ComplexOnsiteApply', 1.72E+12, NULL, 
+    'Requirements: ...', 1.71E+12, NULL, 0, 'FULL_TIME', 'USD', 'BASE_SALARY', 38480, 8540, 34021
+),
+(
+    1829192, NULL, 'Mental Health Therapist/Counselor', """At Aspen Therapy and Wellness ... """,
+    50, 'HOURLY', 'Fort Collins, CO', NULL, 1, 30, 
+    NULL, 'Full-time', NULL, 1.71E+12, NULL, 'https://www.linkedin.com/jobs/view/1829192/?trk=jobs_biz_prem_srch',
+    NULL, 'ComplexOnsiteApply', 1.72E+12, NULL, 
+    NULL, 1.71E+12, NULL, 0, 'FULL_TIME', 'USD', 'BASE_SALARY', 83200, 80521, 8069
+),
+(
+    10998357, 'The National Exemplar', 'Assistant Restaurant Manager', """The National Exemplar is accepting applications for an Assistant Restaurant Manager...""",
+    65000, 'YEARLY', 'Cincinnati, OH', 64896719, 8, 45000, 
+    NULL, 'Full-time', NULL, 1.71E+12, NULL, 'https://www.linkedin.com/jobs/view/10998357/?trk=jobs_biz_prem_srch',
+    NULL, 'ComplexOnsiteApply', 1.72E+12, NULL, 
+    NULL, 1.71E+12, NULL, 0, 'FULL_TIME', 'USD', 'BASE_SALARY', 55000, 45202, 39061
+),
+(
+    23221523, 'Abrams Fensterman, LLP', 'Senior Elder Law / Trusts and Estates Associate Attorney', """Senior Associate Attorney - Elder Law ...""",
+    175000, 'YEARLY', 'New Hyde Park, NY', 766262, 16, 140000, 
+    NULL, 'Full-time', NULL, 1.71E+12, NULL, 'https://www.linkedin.com/jobs/view/23221523/?trk=jobs_biz_prem_srch',
+    NULL, 'ComplexOnsiteApply', 1.72E+12, NULL, 
+    NULL, 1.71E+12, NULL, 0, 'FULL_TIME', 'USD', 'BASE_SALARY', 157500, 11040, 36059
+),
+(
+    91700727, 'Downtown Raleigh Alliance', 'Economic Development and Planning Intern', """Job summary:The Economic Development & Planning Intern will provide ...""",
+    20, 'HOURLY', 'Raleigh, NC', 1481176, 9, 14, 
+    NULL, 'Internship', 4, 1.71E+12, NULL, 'https://www.linkedin.com/jobs/view/91700727/?trk=jobs_biz_prem_srch',
+    NULL, 'ComplexOnsiteApply', 1.72E+12, NULL, 
+    NULL, 1.71E+12, NULL, 0, 'INTERNSHIP', 'USD', 'BASE_SALARY', 35360, 27601, 37183
+);
