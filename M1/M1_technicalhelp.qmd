@@ -1,9 +1,0 @@
----
-title: "Module 1: Getting Started with SQL"
-subtitle: "Technical Help and Additional Resources"
-format:
-  html:
-    toc: true
-    number-sections: true
----
-
