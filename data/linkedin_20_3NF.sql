@@ -29,7 +29,7 @@ INSERT INTO `benefits` VALUES (14,'Life insurance','Life insurance');
 -- Table structure for table `companies`
 
 CREATE TABLE `companies` (
-  `company_id`  BIGINT NOT NULL,
+  `company_id` INTEGER PRIMARY KEY NOT NULL,
   `company_name` VARCHAR(255) DEFAULT NULL,
   `description` text,
   `company_size` INT DEFAULT NULL,
@@ -38,8 +38,7 @@ CREATE TABLE `companies` (
   `city` VARCHAR(255) DEFAULT NULL,
   `zip_code` VARCHAR(50) DEFAULT NULL,
   `address` text,
-  `url` text,
-  PRIMARY KEY (`company_id`)
+  `url` text
 ) ;
 
 
