@@ -1,7 +1,7 @@
 -- Table structure for table `benefits`
 
 CREATE TABLE `benefits` (
-  `benefit_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  `benefit_id` INTEGER PRIMARY KEY NOT NULL,
   `benefit_type` VARCHAR(255) NOT NULL,
   `benefit_description` text,
   PRIMARY KEY (`benefit_id`),
