@@ -87,9 +87,7 @@ INSERT INTO `job_benefits` VALUES (3884842905,5,1),(3884844689,5,1),(3884845441,
 CREATE TABLE `job_industries` (
   `job_id`  BIGINT NOT NULL,
   `industry_id`  BIGINT NOT NULL,
-  PRIMARY KEY (`job_id`,`industry_id`),
-  KEY `industry_id` (`industry_id`)
-) ;
+  PRIMARY KEY (`job_id`,`industry_id`)) ;
 
 
 -- Dumping data for table `job_industries`
@@ -99,9 +97,6 @@ INSERT INTO `job_industries` VALUES (3884842897,3),(3884842905,3),(3884844684,3)
 
 -- Table structure for table `job_postings`
 
-DROP TABLE IF EXISTS `job_postings`;
-
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `job_postings` (
   `job_id`  BIGINT NOT NULL,
   `title` VARCHAR(255) DEFAULT NULL,
@@ -152,8 +147,7 @@ CREATE TABLE `skills` (
   `skill_id`  INTEGER PRIMARY KEY NOT NULL,
   `skill_abr` VARCHAR(10) NOT NULL,
   `skill_name` VARCHAR(255) NOT NULL,
-  `skill_description` text,
-  PRIMARY KEY (`skill_id`)
+  `skill_description` text
   );
 
 
