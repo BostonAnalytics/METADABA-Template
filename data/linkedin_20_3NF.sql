@@ -38,9 +38,6 @@ CREATE TABLE companies (
   company_url TEXT
 ) ;
 
-
-INSERT INTO companies(company_id,company_name,company_size,state,country,city,zip_code,company_address,company_url) VALUES (1009, 'IBM',7,'NY','US','Armonk, New York','10504','International Business Machines Corp.','https://www.linkedin.com/company/ibm\r');
-
 -- Table structure for table `company_industries`
 
 CREATE TABLE `company_industries` (
