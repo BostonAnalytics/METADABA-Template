@@ -97,7 +97,7 @@ INSERT INTO `job_industries` VALUES (3884842897,3),(3884842905,3),(3884844684,3)
 -- Table structure for table `job_postings`
 
 CREATE TABLE `job_postings` (
-  `job_id` BIGINT NOT NULL,
+  `job_id` BIGINT NOT PRIMARY KEY NULL,
   `job_title` TEXT,
   `job_description` TEXT,
   `pay_period` VARCHAR(50),
@@ -123,8 +123,7 @@ CREATE TABLE `job_postings` (
   `compensation_type` VARCHAR(50),
   `normalized_salary` decimal(10,2),
   `zip_code` VARCHAR(10),
-  `fips` INT,
-  PRIMARY KEY (`job_id`)
+  `fips` INT
 ) ;
 
 INSERT INTO job_postings (
