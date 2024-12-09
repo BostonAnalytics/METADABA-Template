@@ -127,6 +127,57 @@ CREATE TABLE `job_postings` (
   PRIMARY KEY (`job_id`)
 ) ;
 
+INSERT INTO job_postings (
+    job_id,
+    title,
+    description,
+    pay_period,
+    location,
+    company_id,
+    views,
+    formatted_work_type,
+    applies,
+    original_listed_time,
+    remote_allowed,
+    job_posting_url,
+    application_type,
+    expiry,
+    closed_time,
+    formatted_experience_level,
+    posting_domain,
+    sponsored,
+    work_type,
+    currency,
+    compensation_type,
+    normalized_salary,
+    zip_code,
+    fips
+) VALUES (
+    1,
+    'Software Engineer',
+    'Develop and maintain software applications.',
+    'monthly',
+    'New York, NY',
+    101,
+    350,
+    'Full-Time',
+    25,
+    '2024-12-01 08:00:00',
+    1,
+    'https://example.com/job/1',
+    'Online',
+    '2025-01-31 23:59:59',
+    NULL,
+    'Entry Level',
+    'Technology',
+    1,
+    'On-site',
+    'USD',
+    'Salary',
+    75000.00,
+    '10001',
+    36061
+);
 
 
 
