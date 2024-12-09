@@ -126,32 +126,7 @@ CREATE TABLE `job_postings` (
   `fips` INT
 ) ;
 
-INSERT INTO job_postings (
-    job_id,
-    job_title,
-    job_description,
-    pay_period,
-    location,
-    company_id,
-    views,
-    formatted_work_type,
-    applies,
-    original_listed_time,
-    remote_allowed,
-    job_posting_url,
-    application_type,
-    expiry,
-    closed_time,
-    formatted_experience_level,
-    posting_domain,
-    sponsored,
-    work_type,
-    currency,
-    compensation_type,
-    normalized_salary,
-    zip_code,
-    fips
-) VALUES (
+INSERT INTO job_postings VALUES (
     1,
     'Software Engineer',
     'Develop and maintain software applications.',
