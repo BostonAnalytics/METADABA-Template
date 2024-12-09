@@ -129,8 +129,8 @@ CREATE TABLE `job_postings` (
 
 INSERT INTO job_postings (
     job_id,
-    title,
-    description,
+    job_title,
+    job_description,
     pay_period,
     location,
     company_id,
