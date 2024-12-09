@@ -35,12 +35,12 @@ CREATE TABLE companies (
   country VARCHAR(2),
   city VARCHAR(255),
   zip_code VARCHAR(50),
-  company_address text,
-  company_url text
+  company_address TEXT,
+  company_url TEXT
 ) ;
 
 
-INSERT INTO companies(company_id, company_name,company_description,company_size,state,country,city,zip_code,company_address,company_url) VALUES (1009, "IBM","At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' into what is. Let's create something that will change everything.",7,"NY","US","Armonk, New York","10504","International Business Machines Corp.","https://www.linkedin.com/company/ibm\r");
+INSERT INTO companies(company_id,company_name,company_description,company_size,state,country,city,zip_code,company_address,company_url) VALUES (1009, "IBM","At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' into what is. Let's create something that will change everything.",7,"NY","US","Armonk, New York","10504","International Business Machines Corp.","https://www.linkedin.com/company/ibm\r");
 
 -- Table structure for table `company_industries`
 
