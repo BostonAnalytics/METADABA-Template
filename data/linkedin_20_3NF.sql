@@ -127,7 +127,7 @@ CREATE TABLE `job_postings` (
 ) ;
 
 INSERT INTO job_postings VALUES (
-    1,
+     1,
     'Software Engineer',
     'Develop and maintain software applications.',
     'monthly',
@@ -139,10 +139,13 @@ INSERT INTO job_postings VALUES (
     '2024-12-01 08:00:00',
     1,
     'https://example.com/job/1',
+    'https://example.com/apply/1',
     'Online',
     '2025-01-31 23:59:59',
     NULL,
     'Entry Level',
+    'Python, Java',
+    '2024-11-30 10:00:00',
     'Technology',
     1,
     'On-site',
