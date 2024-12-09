@@ -125,8 +125,7 @@ CREATE TABLE `job_postings` (
   `normalized_salary` decimal(10,2) DEFAULT NULL,
   `zip_code` VARCHAR(10) DEFAULT NULL,
   `fips` INT DEFAULT NULL,
-  PRIMARY KEY (`job_id`),
-  FOREIGN KEY (company_id) REFERENCES companies (company_id) ON DELETE CASCADE ON UPDATE CASCADE
+  PRIMARY KEY (`job_id`)
 ) ;
 
 
