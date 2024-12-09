@@ -26,21 +26,21 @@ INSERT INTO `benefits` VALUES (14,'Life insurance','Life insurance');
 
 -- Table structure for table `companies`
 
-CREATE TABLE `companies` (
-  `company_id` INTEGER PRIMARY KEY NOT NULL,
-  `company_name` VARCHAR(255) DEFAULT NULL,
-  `company_description` text,
-  `company_size` INT DEFAULT NULL,
-  `state` VARCHAR(50) DEFAULT NULL,
-  `country` VARCHAR(2) DEFAULT NULL,
-  `city` VARCHAR(255) DEFAULT NULL,
-  `zip_code` VARCHAR(50) DEFAULT NULL,
-  `address` text,
-  `url` text
+CREATE TABLE companies (
+  company_id INTEGER PRIMARY KEY NOT NULL,
+  company_name VARCHAR(255) DEFAULT NULL,
+  company_description text,
+  company_size INT DEFAULT NULL,
+  state VARCHAR(50) DEFAULT NULL,
+  country VARCHAR(2) DEFAULT NULL,
+  city VARCHAR(255) DEFAULT NULL,
+  zip_code VARCHAR(50) DEFAULT NULL,
+  company_address text,
+  company_url text
 ) ;
 
 
-INSERT INTO companies(company_id, company_name,company_description,company_size,state,country,city,zip_code,address,url) VALUES (1009,"IBM","At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' into what is. Let's create something that will change everything.",7,"NY","US","Armonk, New York","10504","International Business Machines Corp.","https://www.linkedin.com/company/ibm\r");
+INSERT INTO companies(company_id, company_name,company_description,company_size,state,country,city,zip_code,company_address,company_url) VALUES (1009, "IBM","At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their 'what if' into what is. Let's create something that will change everything.",7,"NY","US","Armonk, New York","10504","International Business Machines Corp.","https://www.linkedin.com/company/ibm\r");
 
 -- Table structure for table `company_industries`
 
