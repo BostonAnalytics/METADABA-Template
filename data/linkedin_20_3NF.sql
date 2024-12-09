@@ -97,7 +97,7 @@ INSERT INTO `job_industries` VALUES (3884842897,3),(3884842905,3),(3884844684,3)
 -- Table structure for table `job_postings`
 
 CREATE TABLE `job_postings` (
-  `job_id` BIGINT NOT PRIMARY KEY NULL,
+  `job_id` BIGINT PRIMARY KEY NOT NULL,
   `job_title` TEXT,
   `job_description` TEXT,
   `pay_period` VARCHAR(50),
