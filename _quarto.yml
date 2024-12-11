@@ -80,7 +80,7 @@ website:
       #       href: M7/M7_exercise.qmd
 format:
   html:
-    theme: [cosmo, ./scss/theme.scss]
+    theme: [cosmo, ./template/theme.scss]
     css: [./css/styles.css]
     toc: true
     grid:
