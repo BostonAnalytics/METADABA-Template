@@ -18,6 +18,11 @@ Please install the following before running the code:
    7. Jupyter - more information [Jupyter](https://jupyter.org/)
    8. Graphviz - more information [Graphviz](https://graphviz.org/)
 
+There is a chance some of you will need build tools for some packages for compilation. This is specifically for windows, not to fret please download and install the following: before you run package commands.
+
+1. [Build Tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+2. [Rtools for Windows 4.4](https://cran.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-6335-6327.exe)
+
 ```{bash}
 pip install numpy pandas matplotlib seaborn jupyter quarto radian rpy2
 ```
@@ -25,7 +30,7 @@ pip install numpy pandas matplotlib seaborn jupyter quarto radian rpy2
 1. `quarto`, `rmarkdown`, `reticulate`, `tidyverse`, `ggplot2`, `dplyr`, `readr`, `readxl`, `stringr`, `forcats`, `lubridate`, `janitor`, `skimr`, `kableExtra`, `knitr`, `kableExtra`, `ggplot2`, `plotly`, `ggrepel`, `ggpubr`, `ggthemes`, `ggsci`, `ggbeeswarm`, `ggrepel`, `ggforce`, `gganimate`, `ggtext`, `ggdist`, `ggpattern`, `ggpointdensity`, `gghighlight`, `ggrepel`, `ggtext`, `ggforce`, `gganimate`, `ggpattern`, `ggpointdensity`, `gghighlight`, `ggdist`, `ggsci`, `ggthemes`, `ggpubr`, `ggbeeswarm` for R. You can install them by running the following command in your R console:
 
 ```{r}
-install.packages(c("quarto", "rmarkdown", "reticulate", "tidyverse", "ggplot2", "dplyr", "readr", "readxl", "stringr", "forcats", "lubridate", "janitor", "skimr",
+install.packages(c("devtools","quarto", "rmarkdown", "reticulate", "tidyverse", "ggplot2", "dplyr", "readr", "readxl", "stringr", "forcats", "lubridate", "janitor", "skimr",
  "kableExtra", "knitr", "kableExtra", "ggplot2", "plotly", "ggrepel", "ggpubr", "ggthemes", "ggsci", "ggbeeswarm", "ggrepel", "ggforce", "gganimate",
   "ggtext", "ggdist", "ggpattern", "ggpointdensity", "gghighlight", "ggrepel", "ggtext", "ggforce", "gganimate", 
   "ggpattern", "ggpointdensity", "gghighlight", "ggdist", "ggsci", "ggthemes", "ggpubr", "ggbeeswarm"))
